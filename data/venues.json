@@ -10,12 +10,16 @@
   "hamm":       { "name": "Schwimmbad Hamm", "ort": "Hamm", "maps": "Schwimmbad Hamm Wasserball", "erkennung": ["Hamm"] },
   "berlin":     { "name": "Schwimmhalle Berlin (DM-Vorrunde)", "ort": "Berlin", "maps": "Schwimmhalle Schöneberg Berlin", "erkennung": ["Berlin"] },
   "cannstatt":  { "name": "Bad Stuttgart-Bad Cannstatt", "ort": "Stuttgart-Bad Cannstatt", "maps": "Inselbad Untertürkheim Stuttgart", "erkennung": ["Cannstatt"] },
-  "esslingen":  { "name": "Bad des SSV Esslingen", "ort": "Esslingen/Stuttgart", "maps": "Inselbad Esslingen", "erkennung": ["Esslingen", "Stuttgart"] },
+  "esslingen":  { "name": "Bad des SSV Esslingen", "ort": "Esslingen/Stuttgart", "maps": "Inselbad Esslingen", "erkennung": ["Esslingen"] },
+  "stuttgart":  { "name": "Schwimmbad Stuttgart", "ort": "Stuttgart", "maps": "Inselbad Untertürkheim Stuttgart", "erkennung": ["Stuttgart"] },
   "laatzen":    { "name": "Schwimmbad Laatzen", "ort": "Laatzen bei Hannover", "maps": "aquaLaatzium Laatzen", "erkennung": ["Laatzen"] },
   "neustadt":   { "name": "Stadionbad Neustadt", "ort": "Neustadt an der Weinstraße", "maps": "Stadionbad Neustadt Weinstraße", "erkennung": ["Neustadt"] },
   "wuerzburg":  { "name": "Schwimmbad Würzburg", "ort": "Würzburg", "maps": "Wolfgang-Adami-Bad Würzburg", "erkennung": ["Würzburg"] },
   "plauen":     { "name": "Stadtbad Plauen", "ort": "Plauen", "maps": "Stadtbad Plauen", "erkennung": ["Plauen"] },
   "solingen":   { "name": "Schwimmbad Solingen", "ort": "Solingen", "maps": "Klingenhalle Solingen Schwimmbad", "erkennung": ["Solingen", "Wuppertal"] },
   "iserlohn":   { "name": "Schwimmbad Iserlohn", "ort": "Iserlohn", "maps": "Schwimmbad Iserlohn", "erkennung": ["Iserlohn"] },
-  "stolberg":   { "name": "Schwimmbad Stolberg", "ort": "Stolberg (Rheinland)", "maps": "Glashütter Weiher Stolberg Schwimmhalle", "erkennung": ["Stolberg"] }
+  "stolberg":   { "name": "Schwimmbad Stolberg", "ort": "Stolberg (Rheinland)", "maps": "Glashütter Weiher Stolberg Schwimmhalle", "erkennung": ["Stolberg"] },
+  "nuernberg":  { "name": "Schwimmbad Nürnberg", "ort": "Nürnberg", "maps": "Langwasserbad Nürnberg", "erkennung": ["Nürnberg"] },
+  "potsdam":    { "name": "blu Potsdam", "ort": "Potsdam", "maps": "blu Potsdam Schwimmhalle", "erkennung": ["Potsdam"] },
+  "hannover":   { "name": "Sportleistungszentrum Hannover", "ort": "Hannover", "maps": "Sportleistungszentrum Hannover", "erkennung": ["Hannover"] }
 }

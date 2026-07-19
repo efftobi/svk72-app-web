@@ -20,10 +20,12 @@
       "urls": [
         "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=198&Group=D&LeagueKind=Z"
       ] },
-    { "id": "u18", "badge": "U18", "jugend": true, "name": "U18", "liga": "U18 NRW · SG mit USV 08",
-      "eigenes_team": "Uerdinger",
+    { "id": "u18", "badge": "U18", "jugend": true, "name": "U18", "liga": "U18-Bundesliga · Vorrunde Gruppe A",
+      "eigenes_team": "SV Krefeld 1972",
       "urls": [
-        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=240&Group=&LeagueKind=L"
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=301&Group=A&LeagueKind=V",
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=301&Group=A&LeagueKind=Z",
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=301&Group=B&LeagueKind=Z"
       ] },
     { "id": "u12", "badge": "U12", "jugend": true, "name": "U12", "liga": "U12 NRW Gruppe A · SG, spielt als USV 08",
       "eigenes_team": "Uerdinger",
