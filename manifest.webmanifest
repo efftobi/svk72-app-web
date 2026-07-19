@@ -1,0 +1,37 @@
+{
+ "teams": [
+  { "id": "u14", "badge": "U14", "jugend": true, "name": "U14", "liga": "Deutsche Meisterschaft U14 · 2025/26", "live": true },
+  { "id": "u18", "badge": "U18", "jugend": true, "name": "U18", "liga": "Jugend-Spielbetrieb" },
+  { "id": "u16", "badge": "U16", "jugend": true, "name": "U16", "liga": "Jugend-Spielbetrieb" },
+  { "id": "u12", "badge": "U12", "jugend": true, "name": "U12", "liga": "Jugend-Spielbetrieb" },
+  { "id": "u10", "badge": "U10", "jugend": true, "name": "U10", "liga": "Jugend-Spielbetrieb" },
+  { "id": "h1", "badge": "H1", "name": "1. Herren", "liga": "2. Wasserball-Liga · Deutscher Zweitliga-Meister 2026" },
+  { "id": "h2", "badge": "H2", "name": "2. Herren", "liga": "Liga folgt" },
+  { "id": "h3", "badge": "H3", "name": "3. Herren", "liga": "Liga folgt" }
+ ],
+ "matches": {
+  "u14": [
+   { "d": "2026-05-10", "heim": "SV Krefeld 72", "gast": "Hildesheim", "h": true, "th": 12, "tg": 9,
+     "hinweis": "DM-Vorrunde: Mit dem 12:9 gegen die Hildesheimer zog die U14 als Gruppenzweiter in die Deutsche Zwischenrunde ein." },
+   { "d": "2026-06-06", "heim": "SV Krefeld 72", "gast": "White Sharks Hannover", "h": false, "ort": "zwischenrunde",
+     "hinweis": "Deutsche Zwischenrunde (6./7. Juni) gegen White Sharks, Düsseldorf und Cannstatt — die U14 erreichte die Endrunde!" },
+   { "d": "2026-06-06", "heim": "SV Krefeld 72", "gast": "Düsseldorf", "h": false, "ort": "zwischenrunde",
+     "hinweis": "Deutsche Zwischenrunde (6./7. Juni) — die U14 erreichte die Endrunde!" },
+   { "d": "2026-06-07", "heim": "SV Krefeld 72", "gast": "SV Cannstatt", "h": false, "ort": "zwischenrunde",
+     "hinweis": "Deutsche Zwischenrunde (6./7. Juni) — die U14 erreichte die Endrunde!" },
+   { "d": "2026-07-05", "heim": "SV Krefeld 72", "gast": "DM-Endrunde Düsseldorf", "h": false, "ort": "duesseldorf",
+     "hinweis": "Endrunde der Deutschen Meisterschaft in Düsseldorf: Platz 8 — die U14 gehört damit zu den acht besten Teams Deutschlands! Einzelergebnisse werden mit der DSV-Anbindung nachgetragen." }
+  ]
+ },
+ "standings": { "u14": [] },
+ "trainings": {},
+ "venues": {
+  "svk": { "name": "SVK-Bad (vereinseigene Anlage)", "adresse": "Palmstraße 8", "ort": "47803 Krefeld", "maps": "Palmstraße 8, 47803 Krefeld" },
+  "zwischenrunde": { "name": "Deutsche Zwischenrunde U14", "ort": "Austragungsort siehe Verein", "maps": "" },
+  "duesseldorf": { "name": "DM-Endrunde U14", "ort": "Düsseldorf", "maps": "Schwimmbad Düsseldorf" },
+  "hannover": { "name": "Sportleistungszentrum Hannover", "adresse": "Ferdinand-Wilhelm-Fricke-Weg", "ort": "Hannover", "maps": "Sportleistungszentrum Hannover" },
+  "cannstatt": { "name": "Bad des SV Cannstatt", "ort": "Stuttgart-Bad Cannstatt", "maps": "SV Cannstatt Wasserball" },
+  "hildesheim": { "name": "Bad Hildesheim", "ort": "Hildesheim", "maps": "Wasserball Hildesheim" }
+ },
+ "stand": "19.07.2026"
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><title>DSV Ergebnisdienst Wasserball - U14 NRW</title></head>
+<body>
+<!-- Synthetische Fixture im Stil des DSV-Ergebnisdienstes (ASP.NET-Tabellen).
+     Dient den Parser-Tests; die echte Struktur liefert der Diagnose-Lauf. -->
+<div id="ContentPlaceHolder1_pnlSchedule">
+  <h2>Spielplan U14 NRW</h2>
+  <table class="GridView" id="gvSchedule">
+    <tr><th>Nr.</th><th>Datum</th><th>Zeit</th><th>Heim</th><th>Gast</th><th>Ergebnis</th><th>Bad</th></tr>
+    <tr><td>1</td><td>15.11.2026</td><td>14:30</td><td>SV Krefeld 72</td><td>SV Blau-Weiß Bochum</td><td>12 : 9 (3:2, 4:2, 2:3, 3:2)</td><td>SVK-Bad Palmstraße, Krefeld</td></tr>
+    <tr><td>2</td><td></td><td>16:00</td><td>Duisburger SV 98</td><td>SV Krefeld 72</td><td>7 : 15 (1:4, 2:4, 2:3, 2:4)</td><td>SVK-Bad Palmstraße, Krefeld</td></tr>
+    <tr><td>3</td><td>13.12.2026</td><td>11:00</td><td>ASC Duisburg</td><td>SV Krefeld 72</td><td>10 : 10 (3:3, 2:2, 3:3, 2:2)</td><td>Schwimmstadion Duisburg</td></tr>
+    <tr><td>4</td><td>17.01.2027</td><td>15:15</td><td>SV Krefeld 72</td><td>SG Essen</td><td></td><td>SVK-Bad Palmstraße, Krefeld</td></tr>
+  </table>
+</div>
+<div id="ContentPlaceHolder1_pnlStandings">
+  <h2>Tabelle</h2>
+  <table class="GridView" id="gvStandings">
+    <tr><th>Platz</th><th>Mannschaft</th><th>Spiele</th><th>S</th><th>U</th><th>N</th><th>Tore</th><th>Diff</th><th>Pkt.</th></tr>
+    <tr><td>1</td><td>SV Krefeld 72</td><td>3</td><td>2</td><td>1</td><td>0</td><td>37:26</td><td>11</td><td>5</td></tr>
+    <tr><td>2</td><td>ASC Duisburg</td><td>3</td><td>2</td><td>1</td><td>0</td><td>31:22</td><td>9</td><td>5</td></tr>
+    <tr><td>3</td><td>SV Blau-Weiß Bochum</td><td>3</td><td>1</td><td>0</td><td>2</td><td>25:28</td><td>-3</td><td>2</td></tr>
+    <tr><td>4</td><td>Duisburger SV 98</td><td>3</td><td>1</td><td>0</td><td>2</td><td>20:29</td><td>-9</td><td>2</td></tr>
+    <tr><td>5</td><td>SG Essen</td><td>2</td><td>0</td><td>0</td><td>2</td><td>12:20</td><td>-8</td><td>0</td></tr>
+  </table>
+</div>
+</body>
+</html>

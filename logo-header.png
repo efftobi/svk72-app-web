@@ -1,0 +1,68 @@
+# SVK-72-App — Betrieb über GitHub
+
+Die App läuft komplett über dein GitHub-Repository, kostenlos:
+
+- **GitHub Pages** liefert die App aus.
+- **GitHub Actions** holt nach Zeitplan die Spieldaten vom
+  DSV-Ergebnisdienst (dsvdaten.dsv.de) und schreibt sie in `data.json`.
+- Die App lädt bei jedem Öffnen die aktuelle `data.json` — niemand muss
+  etwas neu installieren.
+
+## Wichtig: Die Besonderheit gegenüber der CHTC-App
+
+Beim Wasserball kommen die Ligadaten vom **DSV-Ergebnisdienst** — der ist
+anders aufgebaut als hockey.de, und die neue Saison 2026/27 ist dort noch
+nicht veröffentlicht. Deshalb gilt:
+
+1. Die App startet mit den **eingebauten Saison-2025/26-Daten der U14**
+   (DM-Runde bis Platz 8). Die zeigt sie so lange, bis der Parser echte
+   Daten liefert — sie kann also nie „kaputt" aussehen.
+2. Der erste Parser-Wurf ist eine Startvermutung. **Sobald die neue Saison
+   beim DSV online ist:** im Reiter **Actions** den Workflow
+   **„Diagnose DSV"** → „Run workflow" starten. Er schreibt die Datei
+   `debug.txt` ins Repo — die gibst du an Claude, und der Parser wird
+   exakt auf die echte Seitenstruktur eingestellt (beim CHTC hat genau
+   dieses Vorgehen funktioniert: Diagnose → Parser v2 → echte Daten).
+3. Danach in `data/teams.json` die richtige Liga-URL der U14 (und später
+   der anderen Teams) eintragen — fertig ist die Vollautomatik.
+
+**Fairness/Rechtliches:** Vor dem Dauerbetrieb beim DSV bzw. beim
+Schwimmverband NRW kurz anfragen, ob die automatisierte Nutzung der
+Ergebnisdaten für eine Vereins-App in Ordnung ist (gleiche Empfehlung wie
+beim CHTC gegenüber WHV/DHB). Bis dahin kann die App problemlos mit manuell
+gepflegten Daten laufen — siehe unten.
+
+## Einmalig einrichten (nach dem Hochladen dieses Pakets)
+
+1. Alle Dateien/Ordner hochladen (siehe ANLEITUNG.md, Schritt 1).
+2. Reiter **Actions** → ggf. „enable" bestätigen.
+3. Workflow **„Daten-Update vom DSV-Ergebnisdienst"** → „Run workflow".
+   Ergebnis (grüner Haken/rotes ✗ + Log) an Claude melden.
+
+## Wie aktualisiert sich die App?
+
+**Spiele, Ergebnisse, Tabellen — automatisch**, sobald die DSV-Anbindung
+steht: tagsüber alle 2 Stunden, am Wochenende (Spieltage) alle 20 Minuten.
+Ist der Ergebnisdienst mal nicht erreichbar oder ändert sein Layout, bleibt
+einfach der letzte bekannte Stand stehen — die App geht nie kaputt.
+
+**Bis dahin — manuell in 2 Minuten:** Spielpläne/Ergebnisse können direkt
+in der Datei `data.json` gepflegt werden (Abschnitt `"matches"` → `"u14"`;
+Format ist selbsterklärend: Datum, Heim, Gast, `th`/`tg` = Tore). Auf
+GitHub: Datei anklicken → Stift-Symbol → ändern → „Commit changes".
+
+**Trainingszeiten, Bäder-Adressen, Teams:** die Dateien in `data/` sind
+bewusst einfach — `trainings.json` (Trainingszeiten, Vorlage liegt drin),
+`venues.json` (Bäder mit Adressen), `teams.json` (Mannschaften + DSV-URL).
+Änderungen übernimmt der nächste Daten-Lauf automatisch.
+
+## Gut zu wissen
+
+- Bei öffentlichen Repositories sind GitHub Actions und Pages kostenlos.
+- GitHub pausiert Zeitpläne nach ~60 Tagen ohne Aktivität — dann im Reiter
+  Actions auf „Enable" klicken (beim Saisonstart im Herbst dran denken).
+- Wasserball-Saison läuft ca. September–Juni (eine Saison, kein
+  Feld/Halle-Wechsel wie beim Hockey) — Saisonwechsel heißt hier nur:
+  neue Liga-URLs in `data/teams.json`.
+- Später möglich (wie beim CHTC geplant): Push-Benachrichtigungen über
+  eine native Flutter-App, Original-Logo, weitere Teams.
