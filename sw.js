@@ -1,5 +1,5 @@
 // SVK 72 Wasserball PWA — Service Worker (Offline-Cache)
-const CACHE = 'svk72-v2';
+const CACHE = 'svk72-v3';
 const ASSETS = [
   './index.html',
   './manifest.webmanifest',
