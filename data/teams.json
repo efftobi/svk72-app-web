@@ -1,27 +1,26 @@
-name: Daten-Update vom DSV-Ergebnisdienst
-
-on:
-  schedule:
-    - cron: '0 5-21/2 * * *'      # tagsüber alle 2 Stunden (UTC)
-    - cron: '*/20 8-18 * * 0,6'   # Sa/So (Spieltage): alle 20 Minuten
-  workflow_dispatch: {}            # Button "Run workflow" für manuellen Start
-
-permissions:
-  contents: write                  # darf data.json ins Repository schreiben
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: pip install httpx beautifulsoup4
-      - run: python sync_worker/build_data.py
-      - name: Änderungen committen
-        run: |
-          git config user.name "svk72-daten-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add data.json
-          git diff --cached --quiet || { git commit -m "Daten-Update $(date -u +'%Y-%m-%d %H:%M') UTC"; git push; }
+{
+  "_hinweis": "Team-Konfiguration. 'urls' = Liga-Seiten im DSV-Ergebnisdienst (dsvdaten.dsv.de); Teams mit URLs werden automatisch aktualisiert (Spiele aller URLs zusammengeführt, Tabelle aus der ersten URL). URLs am 19.07.2026 per Browser verifiziert — Saison 2025/26: Season=2025, LeagueID 330 = U14 NRW (Group A/B), LeagueID 341 = DM U14 männlich (LeagueKind V/Z/E = Vor-/Zwischen-/Endrunde). Beim Saisonstart 2026/27: neue URLs aus der Ligenübersicht (Index.aspx -> Saisons) eintragen. Diese Datei ist direkt auf GitHub editierbar (Stift-Symbol).",
+  "eigenes_team": "Krefeld",
+  "teams": [
+    { "id": "u14", "badge": "U14", "jugend": true, "name": "U14", "liga": "U14 NRW Gruppe A · DM 2026: Platz 8",
+      "eigenes_team": "SV Krefeld 1972",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=330&Group=A&LeagueKind=L",
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=341&Group=2&LeagueKind=V",
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=341&Group=1&LeagueKind=Z",
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=341&Group=2&LeagueKind=E"
+      ] },
+    { "id": "u14-2", "badge": "U14", "jugend": true, "name": "U14 · 2", "liga": "U14 NRW Gruppe B",
+      "eigenes_team": "Krefeld 1972 II",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=330&Group=B&LeagueKind=L"
+      ] },
+    { "id": "u18", "badge": "U18", "jugend": true, "name": "U18", "liga": "Jugend-Spielbetrieb", "url": null },
+    { "id": "u16", "badge": "U16", "jugend": true, "name": "U16", "liga": "Jugend-Spielbetrieb", "url": null },
+    { "id": "u12", "badge": "U12", "jugend": true, "name": "U12", "liga": "Jugend-Spielbetrieb", "url": null },
+    { "id": "u10", "badge": "U10", "jugend": true, "name": "U10", "liga": "Jugend-Spielbetrieb", "url": null },
+    { "id": "h1", "badge": "H1", "name": "1. Herren", "liga": "2. Wasserball-Bundesliga · Zweitliga-Meister 2026", "url": null },
+    { "id": "h2", "badge": "H2", "name": "2. Herren", "liga": "Liga folgt", "url": null },
+    { "id": "h3", "badge": "H3", "name": "3. Herren", "liga": "Liga folgt", "url": null }
+  ]
+}
