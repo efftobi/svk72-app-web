@@ -45,6 +45,8 @@ class Spiel:
     tore_heim: int | None
     tore_gast: int | None
     venue_rohtext: str | None = None
+    viertel: list | None = None   # ["2:4", "2:4", "3:0", "5:3"]
+    ew: str | None = None         # Entscheidungswerfen-Abschnitt, z. B. "4:2"
 
     @property
     def gespielt(self) -> bool:
@@ -192,10 +194,21 @@ def parse_spiele_dsv(soup: BeautifulSoup) -> list[Spiel]:
                 continue
 
             th = tg = None
+            viertel = ew = None
             if i_erg is not None and i_erg < len(texte):
-                m = RE_ERGEBNIS.search(texte[i_erg])  # erster Treffer = Endstand (Viertel dahinter)
+                erg_text = texte[i_erg]
+                m = RE_ERGEBNIS.search(erg_text)  # erster Treffer = Endstand (Viertel dahinter)
                 if m:
                     th, tg = int(m.group(1)), int(m.group(2))
+                # Viertelergebnisse aus der Klammer: "12:11 (2:4, 2:4, 3:0, 5:3)";
+                # bei "n.EW" ist der 5. Abschnitt das Entscheidungswerfen.
+                klammer = re.search(r"\(([^)]*)\)", erg_text)
+                if klammer:
+                    seg = [f"{a}:{b}" for a, b in RE_ERGEBNIS.findall(klammer.group(1))]
+                    if len(seg) >= 4:
+                        viertel = seg[:4]
+                        if len(seg) >= 5 and "n.EW" in erg_text:
+                            ew = seg[4]
 
             anpfiff = None
             if i_zeit is not None and i_zeit < len(texte):
@@ -213,7 +226,8 @@ def parse_spiele_dsv(soup: BeautifulSoup) -> list[Spiel]:
             if key in gesehen:
                 continue
             gesehen.add(key)
-            spiele.append(Spiel(aktuelles_datum, anpfiff, heim, gast, th, tg, venue))
+            spiele.append(Spiel(aktuelles_datum, anpfiff, heim, gast, th, tg, venue,
+                                viertel=viertel, ew=ew))
 
     spiele.sort(key=lambda s: s.datum)
     return spiele

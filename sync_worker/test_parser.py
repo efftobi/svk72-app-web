@@ -18,12 +18,16 @@ def test_spiele_werden_erkannt():
     assert (s1.tore_heim, s1.tore_gast) == (9, 6)   # Endstand, nicht die Viertel
     assert s1.anpfiff == time(17, 45)               # nicht "15:11" aus dem Datum!
     assert s1.venue_rohtext == "Duisburg"
+    assert s1.viertel == ["1:1", "4:2", "1:0", "3:3"]
+    assert s1.ew is None
 
 
 def test_ergebnis_nach_entscheidungswerfen():
     seite = parse_teamseite(HTML)
     s = next(x for x in seite.spiele if x.datum == date(2025, 12, 2))
     assert (s.tore_heim, s.tore_gast) == (14, 12)   # "14:12 n.EW (...)"
+    assert s.viertel == ["3:3", "3:3", "0:0", "4:4"]
+    assert s.ew == "4:2"                            # 5. Abschnitt = Entscheidungswerfen
 
 
 def test_heimsieg():

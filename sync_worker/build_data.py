@@ -117,6 +117,10 @@ def hole_team(team: dict, venues: dict, eigenes_team: str,
             m["zeit"] = s.anpfiff.strftime("%H:%M")
         if s.gespielt:
             m["th"], m["tg"] = s.tore_heim, s.tore_gast
+        if s.viertel:
+            m["viertel"] = s.viertel
+        if s.ew:
+            m["ew"] = s.ew
         vk = venue_key(s.venue_rohtext, venues)
         if vk:
             m["ort"] = vk
