@@ -1,13 +1,21 @@
 {
-  "_hinweis": "Spielorte (Bäder) mit Adressen. 'erkennung' = Textbausteine, an denen der Daten-Lauf den Spielort aus der Ort-Spalte des DSV-Ergebnisdienstes erkennt (dort stehen meist nur Städtenamen). Reihenfolge zählt: speziellere Muster (Uerdingen, Bochum-Querenburg) vor allgemeinen. Direkt auf GitHub bearbeitbar — Adressen der Auswärtsbäder gern ergänzen.",
+  "_hinweis": "Spielorte (Bäder) mit Adressen. 'erkennung' = Textbausteine, an denen der Daten-Lauf den Spielort aus der Ort-Spalte des DSV-Ergebnisdienstes erkennt (dort stehen meist nur Städtenamen). Reihenfolge zählt: speziellere Muster (Uerdingen, Rheinhausen) vor allgemeinen. Direkt auf GitHub bearbeitbar — Adressen der Bäder gern präzisieren.",
   "uerdingen":  { "name": "Bad in Krefeld-Uerdingen", "ort": "Krefeld-Uerdingen", "maps": "Schwimmbad Krefeld-Uerdingen", "erkennung": ["Uerdingen"] },
   "krefeld":    { "name": "Heimbad SVK", "adresse": "Palmstraße 8 (Freibad-Anlage)", "ort": "47803 Krefeld", "maps": "Palmstraße 8, 47803 Krefeld", "erkennung": ["Krefeld"] },
-  "duisburg":   { "name": "Schwimmbad Duisburg", "ort": "Duisburg", "maps": "Schwimmstadion Duisburg", "erkennung": ["Duisburg"] },
+  "duisburg":   { "name": "Schwimmbad Duisburg", "ort": "Duisburg", "maps": "Schwimmstadion Duisburg", "erkennung": ["Rheinhausen", "Duisburg"] },
   "duesseldorf":{ "name": "Schwimmbad Düsseldorf", "ort": "Düsseldorf", "maps": "Rheinbad Düsseldorf", "erkennung": ["Düsseldorf"] },
-  "koeln":      { "name": "Schwimmbad Köln", "ort": "Köln", "maps": "Schwimmbad Köln Wasserball", "erkennung": ["Köln"] },
+  "koeln":      { "name": "Schwimmbad Köln", "ort": "Köln", "maps": "Schwimmbad Köln Wasserball", "erkennung": ["Köln", "Bonn"] },
   "bochum":     { "name": "Schwimmbad Bochum-Querenburg", "ort": "Bochum", "maps": "Unibad Bochum Querenburg", "erkennung": ["Bochum"] },
   "aachen":     { "name": "Schwimmbad Aachen", "ort": "Aachen", "maps": "Osthalle Aachen Schwimmhalle", "erkennung": ["Aachen"] },
   "hamm":       { "name": "Schwimmbad Hamm", "ort": "Hamm", "maps": "Schwimmbad Hamm Wasserball", "erkennung": ["Hamm"] },
   "berlin":     { "name": "Schwimmhalle Berlin (DM-Vorrunde)", "ort": "Berlin", "maps": "Schwimmhalle Schöneberg Berlin", "erkennung": ["Berlin"] },
-  "cannstatt":  { "name": "Bad Stuttgart-Bad Cannstatt", "ort": "Stuttgart-Bad Cannstatt", "maps": "Inselbad Untertürkheim Stuttgart", "erkennung": ["Cannstatt", "Stuttgart"] }
+  "cannstatt":  { "name": "Bad Stuttgart-Bad Cannstatt", "ort": "Stuttgart-Bad Cannstatt", "maps": "Inselbad Untertürkheim Stuttgart", "erkennung": ["Cannstatt"] },
+  "esslingen":  { "name": "Bad des SSV Esslingen", "ort": "Esslingen/Stuttgart", "maps": "Inselbad Esslingen", "erkennung": ["Esslingen", "Stuttgart"] },
+  "laatzen":    { "name": "Schwimmbad Laatzen", "ort": "Laatzen bei Hannover", "maps": "aquaLaatzium Laatzen", "erkennung": ["Laatzen"] },
+  "neustadt":   { "name": "Stadionbad Neustadt", "ort": "Neustadt an der Weinstraße", "maps": "Stadionbad Neustadt Weinstraße", "erkennung": ["Neustadt"] },
+  "wuerzburg":  { "name": "Schwimmbad Würzburg", "ort": "Würzburg", "maps": "Wolfgang-Adami-Bad Würzburg", "erkennung": ["Würzburg"] },
+  "plauen":     { "name": "Stadtbad Plauen", "ort": "Plauen", "maps": "Stadtbad Plauen", "erkennung": ["Plauen"] },
+  "solingen":   { "name": "Schwimmbad Solingen", "ort": "Solingen", "maps": "Klingenhalle Solingen Schwimmbad", "erkennung": ["Solingen", "Wuppertal"] },
+  "iserlohn":   { "name": "Schwimmbad Iserlohn", "ort": "Iserlohn", "maps": "Schwimmbad Iserlohn", "erkennung": ["Iserlohn"] },
+  "stolberg":   { "name": "Schwimmbad Stolberg", "ort": "Stolberg (Rheinland)", "maps": "Glashütter Weiher Stolberg Schwimmhalle", "erkennung": ["Stolberg"] }
 }

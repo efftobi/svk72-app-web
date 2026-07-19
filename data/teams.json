@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Team-Konfiguration. 'urls' = Liga-Seiten im DSV-Ergebnisdienst (dsvdaten.dsv.de); Teams mit URLs werden automatisch aktualisiert (Spiele aller URLs zusammengeführt, Tabelle aus der ersten URL). URLs am 19.07.2026 per Browser verifiziert — Saison 2025/26: Season=2025, LeagueID 330 = U14 NRW (Group A/B), LeagueID 341 = DM U14 männlich (LeagueKind V/Z/E = Vor-/Zwischen-/Endrunde). Beim Saisonstart 2026/27: neue URLs aus der Ligenübersicht (Index.aspx -> Saisons) eintragen. Diese Datei ist direkt auf GitHub editierbar (Stift-Symbol).",
+  "_hinweis": "Team-Konfiguration. 'urls' = Liga-Seiten im DSV-Ergebnisdienst (dsvdaten.dsv.de); Spiele aller URLs werden zusammengeführt, die Tabelle kommt aus der ersten URL. 'eigenes_team' = Namensbaustein zur Erkennung der eigenen Spiele/Tabellenzeile — wegen der Spielgemeinschaft mit dem Uerdinger SV 08 spielen U12 und U18 unter 'Uerdinger Schwimmverein 08'. Alle URLs am 19.07.2026 per Browser verifiziert (Saison 2025/26 = Season=2025). Beim Saisonstart 2026/27: neue URLs aus der Ligenübersicht (Index.aspx -> Saisons) eintragen. Direkt auf GitHub editierbar (Stift-Symbol).",
   "eigenes_team": "Krefeld",
   "teams": [
     { "id": "u14", "badge": "U14", "jugend": true, "name": "U14", "liga": "U14 NRW Gruppe A · DM 2026: Platz 8",
@@ -15,12 +15,46 @@
       "urls": [
         "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=330&Group=B&LeagueKind=L"
       ] },
-    { "id": "u18", "badge": "U18", "jugend": true, "name": "U18", "liga": "Jugend-Spielbetrieb", "url": null },
-    { "id": "u16", "badge": "U16", "jugend": true, "name": "U16", "liga": "Jugend-Spielbetrieb", "url": null },
-    { "id": "u12", "badge": "U12", "jugend": true, "name": "U12", "liga": "Jugend-Spielbetrieb", "url": null },
-    { "id": "u10", "badge": "U10", "jugend": true, "name": "U10", "liga": "Jugend-Spielbetrieb", "url": null },
-    { "id": "h1", "badge": "H1", "name": "1. Herren", "liga": "2. Wasserball-Bundesliga · Zweitliga-Meister 2026", "url": null },
-    { "id": "h2", "badge": "H2", "name": "2. Herren", "liga": "Liga folgt", "url": null },
-    { "id": "h3", "badge": "H3", "name": "3. Herren", "liga": "Liga folgt", "url": null }
+    { "id": "u16", "badge": "U16", "jugend": true, "name": "U16", "liga": "U16 NRW Hauptrunde D",
+      "eigenes_team": "SV Krefeld 1972",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=198&Group=D&LeagueKind=Z"
+      ] },
+    { "id": "u18", "badge": "U18", "jugend": true, "name": "U18", "liga": "U18 NRW · SG mit USV 08",
+      "eigenes_team": "Uerdinger",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=240&Group=&LeagueKind=L"
+      ] },
+    { "id": "u12", "badge": "U12", "jugend": true, "name": "U12", "liga": "U12 NRW Gruppe A · SG, spielt als USV 08",
+      "eigenes_team": "Uerdinger",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=200&Group=A&LeagueKind=V"
+      ] },
+    { "id": "u12-2", "badge": "U12", "jugend": true, "name": "U12 · 2", "liga": "U12 NRW Gruppe B · SG, spielt als USV 08",
+      "eigenes_team": "Uerdinger",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=200&Group=B&LeagueKind=V"
+      ] },
+    { "id": "u10", "badge": "U10", "jugend": true, "name": "U10", "liga": "U10 NRW Endrunde · 05.09. in Duisburg",
+      "eigenes_team": "Uerdinger",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=283&Group=&LeagueKind=E"
+      ] },
+    { "id": "h1", "badge": "H1", "name": "1. Herren", "liga": "2. Wasserball-Bundesliga · MEISTER 2026",
+      "eigenes_team": "SV Krefeld 1972",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=396&Group=&LeagueKind=V",
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=396&Group=&LeagueKind=P"
+      ] },
+    { "id": "h2", "badge": "H2", "name": "2. Herren", "liga": "Wasserballliga West",
+      "eigenes_team": "Krefeld 1972 II",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=393&Group=&LeagueKind=L"
+      ] },
+    { "id": "h3", "badge": "H3", "name": "3. Herren", "liga": "NRW Oberliga",
+      "eigenes_team": "Krefeld 1972 III",
+      "urls": [
+        "https://dsvdaten.dsv.de/Modules/WB/League.aspx?Season=2025&LeagueID=196&Group=&LeagueKind=L"
+      ] }
   ]
 }
