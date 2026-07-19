@@ -22,7 +22,8 @@ from datetime import date, time
 
 from bs4 import BeautifulSoup
 
-EIGENES_TEAM = "Krefeld"  # Erkennung eigener Zeilen/Spiele
+EIGENES_TEAM = "Krefeld"  # Fallback-Erkennung; wegen der Spielgemeinschaft mit dem
+# Uerdinger SV 08 setzt build_data.py die Markierung je Team selbst (eigenes_team).
 
 MONATE = {
     "januar": 1, "februar": 2, "märz": 3, "april": 4, "mai": 5, "juni": 6,
@@ -105,8 +106,8 @@ def _zahl(s: str) -> int:
 
 def _saubere_mannschaft(t: str) -> str | None:
     t = re.sub(r"\s+", " ", t or "").strip()
-    # Zusätze wie "SV Krefeld 1972 II - dir. Vergleich: 1. (Punkte: 3 | TD: 6)" abschneiden
-    t = re.split(r"\s+-\s+dir\.", t)[0].strip()
+    # Zusätze abschneiden: "... - dir. Vergleich: ..." / "... - eig. Tabelle: ..."
+    t = re.split(r"\s+-\s+(?:dir\.|eig\.)", t)[0].strip()
     return t or None
 
 

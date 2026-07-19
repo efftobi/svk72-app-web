@@ -86,12 +86,13 @@ def hole_team(team: dict, venues: dict, eigenes_team: str,
         seite = parse_teamseite(hole_seite(client, url, offline))
         alle_spiele.extend(seite.spiele)
         if not standings and seite.tabelle:
-            standings_quelle = seite.tabelle
+            # Eigene Zeile anhand des Team-eigenen Namens markieren (nicht über den
+            # globalen Parser-Fallback — wichtig wegen SG mit Uerdinger SV 08)
             standings = [
                 [z.platz, z.mannschaft, z.spiele, z.siege, z.unentschieden,
                  z.niederlagen, f"{z.tore}:{z.gegentore}", z.punkte]
-                + ([True] if z.ist_eigenes_team else [])
-                for z in standings_quelle
+                + ([True] if eigenes_team.lower() in z.mannschaft.lower() else [])
+                for z in seite.tabelle
             ]
         if offline:
             break  # Fixture deckt nur eine Seite ab
