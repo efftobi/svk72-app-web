@@ -3,84 +3,99 @@
   {
    "id": "u14",
    "badge": "U14",
+   "jugend": true,
    "name": "U14",
    "liga": "U14 NRW Gruppe A · DM 2026: Platz 8",
-   "jugend": true,
    "live": true
   },
   {
    "id": "u14-2",
    "badge": "U14",
+   "jugend": true,
    "name": "U14 · 2",
    "liga": "U14 NRW Gruppe B",
+   "live": true
+  },
+  {
+   "id": "u16",
+   "badge": "U16",
    "jugend": true,
+   "name": "U16",
+   "liga": "U16 NRW Hauptrunde D",
    "live": true
   },
   {
    "id": "u18",
    "badge": "U18",
+   "jugend": true,
    "name": "U18",
-   "liga": "Jugend-Spielbetrieb",
-   "jugend": true
-  },
-  {
-   "id": "u16",
-   "badge": "U16",
-   "name": "U16",
-   "liga": "Jugend-Spielbetrieb",
-   "jugend": true
+   "liga": "U18 NRW · SG mit USV 08",
+   "live": true
   },
   {
    "id": "u12",
    "badge": "U12",
+   "jugend": true,
    "name": "U12",
-   "liga": "Jugend-Spielbetrieb",
-   "jugend": true
+   "liga": "U12 NRW Gruppe A · SG, spielt als USV 08",
+   "live": true
+  },
+  {
+   "id": "u12-2",
+   "badge": "U12",
+   "jugend": true,
+   "name": "U12 · 2",
+   "liga": "U12 NRW Gruppe B · SG, spielt als USV 08",
+   "live": true
   },
   {
    "id": "u10",
    "badge": "U10",
+   "jugend": true,
    "name": "U10",
-   "liga": "Jugend-Spielbetrieb",
-   "jugend": true
+   "liga": "U10 NRW Endrunde · 05.09. in Duisburg",
+   "live": true
   },
   {
    "id": "h1",
    "badge": "H1",
    "name": "1. Herren",
-   "liga": "2. Wasserball-Bundesliga · Zweitliga-Meister 2026"
+   "liga": "2. Wasserball-Bundesliga · MEISTER 2026",
+   "live": true
   },
   {
    "id": "h2",
    "badge": "H2",
    "name": "2. Herren",
-   "liga": "Liga folgt"
+   "liga": "Wasserballliga West",
+   "live": true
   },
   {
    "id": "h3",
    "badge": "H3",
    "name": "3. Herren",
-   "liga": "Liga folgt"
+   "liga": "NRW Oberliga",
+   "live": true
   }
  ],
  "matches": {
   "u14": [
    {
     "d": "2025-11-15",
-    "zeit": "17:45",
     "heim": "ASC Duisburg",
     "gast": "SV Krefeld 1972",
     "h": false,
+    "zeit": "17:45",
     "th": 9,
     "tg": 6,
     "ort": "duisburg"
    },
    {
     "d": "2025-12-02",
-    "zeit": "19:30",
     "heim": "Düsseldorfer SC 1898",
     "gast": "SV Krefeld 1972",
     "h": false,
+    "zeit": "19:30",
     "th": 14,
     "tg": 12,
     "ort": "duesseldorf",
@@ -88,20 +103,20 @@
    },
    {
     "d": "2026-02-08",
-    "zeit": "16:45",
     "heim": "SV Krefeld 1972",
     "gast": "SV Blau-Weiß Bochum",
     "h": true,
+    "zeit": "16:45",
     "th": 12,
     "tg": 11,
     "ort": "krefeld"
    },
    {
     "d": "2026-05-09",
-    "zeit": "14:00",
     "heim": "SV Krefeld 1972",
     "gast": "Wfr. Spandau 04",
     "h": true,
+    "zeit": "14:00",
     "th": 7,
     "tg": 23,
     "ort": "berlin",
@@ -109,10 +124,10 @@
    },
    {
     "d": "2026-05-09",
-    "zeit": "19:30",
     "heim": "SV Krefeld 1972",
     "gast": "SC Wasserfr. Fulda 1923",
     "h": true,
+    "zeit": "19:30",
     "th": 10,
     "tg": 7,
     "ort": "berlin",
@@ -120,10 +135,10 @@
    },
    {
     "d": "2026-05-10",
-    "zeit": "12:00",
     "heim": "HSC Hellas-1899 Hildesheim",
     "gast": "SV Krefeld 1972",
     "h": false,
+    "zeit": "12:00",
     "th": 9,
     "tg": 12,
     "ort": "berlin",
@@ -131,20 +146,20 @@
    },
    {
     "d": "2026-05-29",
-    "zeit": "18:00",
     "heim": "Duisburger SV 1898",
     "gast": "SV Krefeld 1972",
     "h": false,
+    "zeit": "18:00",
     "th": 12,
     "tg": 5,
     "ort": "duisburg"
    },
    {
     "d": "2026-06-06",
-    "zeit": "14:45",
     "heim": "SV Krefeld 1972",
     "gast": "White Sharks Hannover",
     "h": true,
+    "zeit": "14:45",
     "th": 7,
     "tg": 13,
     "ort": "krefeld",
@@ -152,10 +167,10 @@
    },
    {
     "d": "2026-06-06",
-    "zeit": "19:45",
     "heim": "SV Krefeld 1972",
     "gast": "Düsseldorfer SC 1898",
     "h": true,
+    "zeit": "19:45",
     "th": 11,
     "tg": 17,
     "ort": "krefeld",
@@ -163,10 +178,10 @@
    },
    {
     "d": "2026-06-07",
-    "zeit": "10:00",
     "heim": "SV Krefeld 1972",
     "gast": "SV Cannstatt",
     "h": true,
+    "zeit": "10:00",
     "th": 9,
     "tg": 11,
     "ort": "uerdingen",
@@ -174,30 +189,30 @@
    },
    {
     "d": "2026-06-19",
-    "zeit": "19:30",
     "heim": "SGW Rhenania/BW Poseidon Köln",
     "gast": "SV Krefeld 1972",
     "h": false,
+    "zeit": "19:30",
     "th": 11,
     "tg": 15,
     "ort": "koeln"
    },
    {
     "d": "2026-06-20",
-    "zeit": "16:00",
     "heim": "SV Blau-Weiß Bochum",
     "gast": "SV Krefeld 1972",
     "h": false,
+    "zeit": "16:00",
     "th": 11,
     "tg": 17,
     "ort": "bochum"
    },
    {
     "d": "2026-06-24",
-    "zeit": "18:00",
     "heim": "SV Krefeld 1972",
     "gast": "Duisburger SV 1898",
     "h": true,
+    "zeit": "18:00",
     "th": 12,
     "tg": 10,
     "ort": "krefeld",
@@ -205,30 +220,30 @@
    },
    {
     "d": "2026-06-27",
-    "zeit": "12:00",
     "heim": "SV Krefeld 1972",
     "gast": "SGW Rhenania/BW Poseidon Köln",
     "h": true,
+    "zeit": "12:00",
     "th": 13,
     "tg": 5,
     "ort": "krefeld"
    },
    {
     "d": "2026-07-01",
-    "zeit": "19:00",
     "heim": "SV Krefeld 1972",
     "gast": "ASC Duisburg",
     "h": true,
+    "zeit": "19:00",
     "th": 10,
     "tg": 14,
     "ort": "krefeld"
    },
    {
     "d": "2026-07-04",
-    "zeit": "10:45",
     "heim": "SV Krefeld 1972",
     "gast": "Wfr. Spandau 04",
     "h": true,
+    "zeit": "10:45",
     "th": 5,
     "tg": 17,
     "ort": "duesseldorf",
@@ -236,10 +251,10 @@
    },
    {
     "d": "2026-07-04",
-    "zeit": "15:30",
     "heim": "SV Krefeld 1972",
     "gast": "SV Cannstatt",
     "h": true,
+    "zeit": "15:30",
     "th": 5,
     "tg": 15,
     "ort": "duesseldorf",
@@ -247,21 +262,21 @@
    },
    {
     "d": "2026-07-05",
-    "zeit": "09:15",
     "heim": "SV Krefeld 1972",
     "gast": "ASC Duisburg",
     "h": true,
+    "zeit": "09:15",
     "th": 11,
     "tg": 7,
     "ort": "duesseldorf",
-    "hinweis": "Sieg zum Abschluss der DM-Endrunde — Platz 8 der Deutschen Meisterschaft: die U14 gehört zu den acht besten Teams Deutschlands!"
+    "hinweis": "Sieg zum Abschluss der DM-Endrunde — Platz 8 der Deutschen Meisterschaft!"
    },
    {
     "d": "2026-07-12",
-    "zeit": "11:30",
     "heim": "SV Krefeld 1972",
     "gast": "Düsseldorfer SC 1898",
     "h": true,
+    "zeit": "11:30",
     "th": 8,
     "tg": 12,
     "ort": "krefeld"
@@ -280,113 +295,740 @@
    },
    {
     "d": "2025-11-15",
-    "zeit": "19:15",
     "heim": "ASC Duisburg II",
     "gast": "SV Krefeld 1972 II",
     "h": false,
+    "zeit": "19:15",
     "th": 10,
     "tg": 6,
     "ort": "duisburg"
    },
    {
     "d": "2025-11-23",
-    "zeit": "18:00",
     "heim": "Aachener SV 06",
     "gast": "SV Krefeld 1972 II",
     "h": false,
+    "zeit": "18:00",
     "th": 7,
     "tg": 13,
     "ort": "aachen"
    },
    {
     "d": "2025-12-13",
-    "zeit": "16:30",
     "heim": "SC Aqua Köln",
     "gast": "SV Krefeld 1972 II",
     "h": false,
+    "zeit": "16:30",
     "th": 8,
     "tg": 14,
     "ort": "koeln"
    },
    {
     "d": "2026-02-10",
-    "zeit": "19:30",
     "heim": "Düsseldorfer SC 1898 II",
     "gast": "SV Krefeld 1972 II",
     "h": false,
+    "zeit": "19:30",
     "th": 18,
     "tg": 5,
     "ort": "duesseldorf"
    },
    {
     "d": "2026-02-21",
-    "zeit": "16:15",
     "heim": "SV Krefeld 1972 II",
     "gast": "SGW Rhenania/BW Poseidon Köln II",
     "h": true,
+    "zeit": "16:15",
     "th": 10,
     "tg": 4,
     "ort": "uerdingen"
    },
    {
     "d": "2026-03-01",
-    "zeit": "18:00",
     "heim": "SV Krefeld 1972 II",
     "gast": "Rote Erde/SWIM-TEAM TuS 1859 Hamm",
     "h": true,
+    "zeit": "18:00",
     "th": 5,
     "tg": 13,
     "ort": "krefeld"
    },
    {
     "d": "2026-04-26",
-    "zeit": "16:45",
     "heim": "SV Krefeld 1972 II",
     "gast": "Düsseldorfer SC 1898 II",
     "h": true,
+    "zeit": "16:45",
     "th": 3,
     "tg": 12,
     "ort": "krefeld"
    },
    {
     "d": "2026-05-30",
-    "zeit": "13:30",
     "heim": "SGW Rhenania/BW Poseidon Köln II",
     "gast": "SV Krefeld 1972 II",
     "h": false,
+    "zeit": "13:30",
     "th": 6,
     "tg": 9,
     "ort": "koeln"
    },
    {
     "d": "2026-06-17",
-    "zeit": "18:00",
     "heim": "SV Krefeld 1972 II",
     "gast": "Aachener SV 06",
     "h": true,
+    "zeit": "18:00",
     "th": 25,
     "tg": 2,
     "ort": "krefeld"
    },
    {
     "d": "2026-07-03",
-    "zeit": "19:30",
     "heim": "SV Krefeld 1972 II",
     "gast": "SC Aqua Köln",
     "h": true,
+    "zeit": "19:30",
     "th": 13,
     "tg": 7,
     "ort": "krefeld"
    },
    {
     "d": "2026-07-15",
-    "zeit": "19:00",
     "heim": "Rote Erde/SWIM-TEAM TuS 1859 Hamm",
     "gast": "SV Krefeld 1972 II",
     "h": false,
+    "zeit": "19:00",
     "th": 9,
     "tg": 6,
     "ort": "hamm"
+   }
+  ],
+  "u16": [
+   {
+    "d": "2026-05-11",
+    "heim": "Rote Erde/SWIM-TEAM TuS 1859 Hamm",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "19:00",
+    "th": 12,
+    "tg": 16,
+    "ort": "hamm"
+   },
+   {
+    "d": "2026-05-18",
+    "heim": "SV Krefeld 1972",
+    "gast": "Rote Erde/SWIM-TEAM TuS 1859 Hamm",
+    "h": true,
+    "th": 10,
+    "tg": 0,
+    "ort": "krefeld",
+    "hinweis": "Kampflose Wertung (10:0)."
+   },
+   {
+    "d": "2026-06-14",
+    "heim": "SV Krefeld 1972",
+    "gast": "ASC Duisburg",
+    "h": true,
+    "th": 0,
+    "tg": 10,
+    "ort": "krefeld",
+    "hinweis": "Kampflose Wertung (0:10)."
+   },
+   {
+    "d": "2026-06-16",
+    "heim": "ASC Duisburg",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "th": 10,
+    "tg": 0,
+    "ort": "duisburg",
+    "hinweis": "Kampflose Wertung (10:0)."
+   },
+   {
+    "d": "2026-07-13",
+    "heim": "Duisburger SV 1898",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "19:30",
+    "th": 17,
+    "tg": 6,
+    "ort": "duisburg"
+   },
+   {
+    "d": "2026-07-15",
+    "heim": "SV Krefeld 1972",
+    "gast": "Duisburger SV 1898",
+    "h": true,
+    "zeit": "20:00",
+    "th": 12,
+    "tg": 15,
+    "ort": "krefeld"
+   }
+  ],
+  "u18": [
+   {
+    "d": "2026-03-22",
+    "heim": "Uerdinger Schwimmverein 08",
+    "gast": "SC Aqua Köln",
+    "h": true,
+    "zeit": "11:30",
+    "th": 13,
+    "tg": 9,
+    "ort": "uerdingen",
+    "hinweis": "Die U18 spielt in der Spielgemeinschaft unter Uerdinger SV 08."
+   },
+   {
+    "d": "2026-04-28",
+    "heim": "SC Aqua Köln",
+    "gast": "Uerdinger Schwimmverein 08",
+    "h": false,
+    "zeit": "20:00",
+    "th": 18,
+    "tg": 19,
+    "ort": "koeln"
+   },
+   {
+    "d": "2026-05-10",
+    "heim": "Uerdinger Schwimmverein 08",
+    "gast": "Duisburger SV 1898",
+    "h": true,
+    "zeit": "11:30",
+    "th": 8,
+    "tg": 21,
+    "ort": "uerdingen"
+   },
+   {
+    "d": "2026-06-27",
+    "heim": "Duisburger SV 1898",
+    "gast": "Uerdinger Schwimmverein 08",
+    "h": false,
+    "zeit": "13:00",
+    "th": 20,
+    "tg": 11,
+    "ort": "duisburg"
+   }
+  ],
+  "u12": [
+   {
+    "d": "2026-01-25",
+    "heim": "ASC Duisburg",
+    "gast": "Uerdinger Schwimmverein 08",
+    "h": false,
+    "zeit": "16:00",
+    "th": 19,
+    "tg": 6,
+    "ort": "duisburg",
+    "hinweis": "Die U12 spielt in der Spielgemeinschaft unter Uerdinger SV 08."
+   },
+   {
+    "d": "2026-02-06",
+    "heim": "SGW Rhenania/BW Poseidon Köln",
+    "gast": "Uerdinger Schwimmverein 08",
+    "h": false,
+    "zeit": "18:00",
+    "th": 8,
+    "tg": 9,
+    "ort": "koeln"
+   },
+   {
+    "d": "2026-02-25",
+    "heim": "Uerdinger Schwimmverein 08",
+    "gast": "Duisburger SV 1898",
+    "h": true,
+    "zeit": "17:45",
+    "th": 3,
+    "tg": 22,
+    "ort": "uerdingen"
+   },
+   {
+    "d": "2026-03-25",
+    "heim": "Uerdinger Schwimmverein 08",
+    "gast": "SGW Rhenania/BW Poseidon Köln",
+    "h": true,
+    "zeit": "17:45",
+    "th": 7,
+    "tg": 5,
+    "ort": "uerdingen"
+   },
+   {
+    "d": "2026-04-22",
+    "heim": "Uerdinger Schwimmverein 08",
+    "gast": "SV Blau-Weiß Bochum",
+    "h": true,
+    "zeit": "17:45",
+    "th": 4,
+    "tg": 20,
+    "ort": "uerdingen"
+   },
+   {
+    "d": "2026-05-10",
+    "heim": "SV Blau-Weiß Bochum",
+    "gast": "Uerdinger Schwimmverein 08",
+    "h": false,
+    "zeit": "16:00",
+    "th": 18,
+    "tg": 4,
+    "ort": "bochum"
+   },
+   {
+    "d": "2026-06-08",
+    "heim": "Duisburger SV 1898",
+    "gast": "Uerdinger Schwimmverein 08",
+    "h": false,
+    "zeit": "18:00",
+    "th": 13,
+    "tg": 4,
+    "ort": "duisburg"
+   },
+   {
+    "d": "2026-06-30",
+    "heim": "Uerdinger Schwimmverein 08",
+    "gast": "ASC Duisburg",
+    "h": true,
+    "zeit": "18:00",
+    "th": 6,
+    "tg": 12,
+    "ort": "uerdingen"
+   }
+  ],
+  "u12-2": [
+   {
+    "d": "2026-01-17",
+    "heim": "SC Aqua Köln",
+    "gast": "Uerdinger Schwimmverein 08 II",
+    "h": false,
+    "zeit": "16:30",
+    "th": 8,
+    "tg": 12,
+    "ort": "koeln",
+    "hinweis": "Die U12 · 2 spielt in der Spielgemeinschaft unter Uerdinger SV 08 II."
+   },
+   {
+    "d": "2026-01-23",
+    "heim": "Rote Erde/SWIM-TEAM TuS 1859 Hamm",
+    "gast": "Uerdinger Schwimmverein 08 II",
+    "h": false,
+    "zeit": "18:45",
+    "th": 8,
+    "tg": 4,
+    "ort": "hamm"
+   },
+   {
+    "d": "2026-03-04",
+    "heim": "Uerdinger Schwimmverein 08 II",
+    "gast": "SC Aqua Köln",
+    "h": true,
+    "zeit": "17:45",
+    "th": 7,
+    "tg": 2,
+    "ort": "uerdingen"
+   },
+   {
+    "d": "2026-03-12",
+    "heim": "Düsseldorfer SC 1898",
+    "gast": "Uerdinger Schwimmverein 08 II",
+    "h": false,
+    "zeit": "19:30",
+    "th": 3,
+    "tg": 4,
+    "ort": "duesseldorf"
+   },
+   {
+    "d": "2026-04-19",
+    "heim": "Aachener SV 06",
+    "gast": "Uerdinger Schwimmverein 08 II",
+    "h": false,
+    "zeit": "17:15",
+    "th": 8,
+    "tg": 6,
+    "ort": "aachen"
+   },
+   {
+    "d": "2026-05-06",
+    "heim": "Uerdinger Schwimmverein 08 II",
+    "gast": "Rote Erde/SWIM-TEAM TuS 1859 Hamm",
+    "h": true,
+    "zeit": "17:45",
+    "th": 0,
+    "tg": 14,
+    "ort": "uerdingen"
+   },
+   {
+    "d": "2026-05-27",
+    "heim": "Uerdinger Schwimmverein 08 II",
+    "gast": "Aachener SV 06",
+    "h": true,
+    "zeit": "17:45",
+    "th": 3,
+    "tg": 20,
+    "ort": "uerdingen"
+   },
+   {
+    "d": "2026-06-17",
+    "heim": "Uerdinger Schwimmverein 08 II",
+    "gast": "Düsseldorfer SC 1898",
+    "h": true,
+    "zeit": "17:45",
+    "th": 1,
+    "tg": 13,
+    "ort": "uerdingen"
+   }
+  ],
+  "u10": [
+   {
+    "d": "2026-09-05",
+    "heim": "U10 NRW Endrunde",
+    "gast": "Teilnehmer werden zugelost",
+    "h": false,
+    "zeit": "11:00",
+    "ort": "duisburg",
+    "hinweis": "Die U10-Endrunde NRW steigt am 5. September 2026 in Duisburg — Gruppen und Anwurfzeiten lost der Verband noch zu."
+   }
+  ],
+  "h1": [
+   {
+    "d": "2025-10-25",
+    "heim": "SV Krefeld 1972",
+    "gast": "Uerdinger Schwimmverein 08",
+    "h": true,
+    "zeit": "18:00",
+    "th": 13,
+    "tg": 6,
+    "ort": "krefeld",
+    "hinweis": "Vereins-Derby der Spielgemeinschaft: SVK gegen USV 08."
+   },
+   {
+    "d": "2025-11-01",
+    "heim": "SSV Esslingen",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "14:00",
+    "th": 11,
+    "tg": 18,
+    "ort": "esslingen"
+   },
+   {
+    "d": "2025-11-08",
+    "heim": "SV Krefeld 1972",
+    "gast": "SC Neustadt/Weinstraße",
+    "h": true,
+    "zeit": "18:00",
+    "th": 16,
+    "tg": 13,
+    "ort": "krefeld"
+   },
+   {
+    "d": "2025-11-29",
+    "heim": "Düsseldorfer SC 1898",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "17:30",
+    "th": 14,
+    "tg": 11,
+    "ort": "duesseldorf"
+   },
+   {
+    "d": "2025-12-06",
+    "heim": "SpVg Laatzen 1894",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "16:00",
+    "th": 9,
+    "tg": 18,
+    "ort": "laatzen"
+   },
+   {
+    "d": "2026-01-24",
+    "heim": "SV Krefeld 1972",
+    "gast": "SVV Plauen",
+    "h": true,
+    "zeit": "18:00",
+    "th": 22,
+    "tg": 10,
+    "ort": "krefeld"
+   },
+   {
+    "d": "2026-02-14",
+    "heim": "SV Krefeld 1972",
+    "gast": "SSV Esslingen",
+    "h": true,
+    "zeit": "18:00",
+    "th": 18,
+    "tg": 17,
+    "ort": "krefeld"
+   },
+   {
+    "d": "2026-02-21",
+    "heim": "SC Neustadt/Weinstraße",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "18:00",
+    "th": 14,
+    "tg": 10,
+    "ort": "neustadt"
+   },
+   {
+    "d": "2026-02-28",
+    "heim": "SV Würzburg 05",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "16:30",
+    "th": 12,
+    "tg": 25,
+    "ort": "wuerzburg"
+   },
+   {
+    "d": "2026-03-07",
+    "heim": "SV Krefeld 1972",
+    "gast": "Düsseldorfer SC 1898",
+    "h": true,
+    "zeit": "18:00",
+    "th": 15,
+    "tg": 13,
+    "ort": "krefeld"
+   },
+   {
+    "d": "2026-03-08",
+    "heim": "Uerdinger Schwimmverein 08",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "14:00",
+    "th": 13,
+    "tg": 11,
+    "ort": "uerdingen",
+    "hinweis": "Derby-Rückspiel bei der SG-Partnermannschaft USV 08."
+   },
+   {
+    "d": "2026-03-14",
+    "heim": "SV Krefeld 1972",
+    "gast": "SpVg Laatzen 1894",
+    "h": true,
+    "zeit": "18:00",
+    "th": 21,
+    "tg": 8,
+    "ort": "krefeld"
+   },
+   {
+    "d": "2026-03-15",
+    "heim": "SV Krefeld 1972",
+    "gast": "SV Würzburg 05",
+    "h": true,
+    "zeit": "15:00",
+    "th": 18,
+    "tg": 13,
+    "ort": "krefeld"
+   },
+   {
+    "d": "2026-03-21",
+    "heim": "SVV Plauen",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "19:00",
+    "th": 11,
+    "tg": 15,
+    "ort": "plauen"
+   },
+   {
+    "d": "2026-04-18",
+    "heim": "SV Würzburg 05",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "16:30",
+    "th": 15,
+    "tg": 20,
+    "ort": "wuerzburg",
+    "hinweis": "Playoff-Viertelfinale, Spiel 1."
+   },
+   {
+    "d": "2026-04-25",
+    "heim": "SV Krefeld 1972",
+    "gast": "SV Würzburg 05",
+    "h": true,
+    "zeit": "17:00",
+    "th": 17,
+    "tg": 11,
+    "ort": "krefeld",
+    "hinweis": "Playoff-Viertelfinale, Spiel 2 — Halbfinale erreicht."
+   },
+   {
+    "d": "2026-05-09",
+    "heim": "SVV Plauen",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "19:00",
+    "th": 10,
+    "tg": 16,
+    "ort": "plauen",
+    "hinweis": "Playoff-Halbfinale, Spiel 1."
+   },
+   {
+    "d": "2026-05-16",
+    "heim": "SV Krefeld 1972",
+    "gast": "SVV Plauen",
+    "h": true,
+    "zeit": "17:00",
+    "th": 25,
+    "tg": 7,
+    "ort": "krefeld",
+    "hinweis": "Playoff-Halbfinale, Spiel 2 — Kantersieg, Finale erreicht!"
+   },
+   {
+    "d": "2026-05-23",
+    "heim": "SSV Esslingen",
+    "gast": "SV Krefeld 1972",
+    "h": false,
+    "zeit": "16:00",
+    "th": 10,
+    "tg": 15,
+    "ort": "esslingen",
+    "hinweis": "FINALE, Spiel 1: Auswärtssieg im Inselbad."
+   },
+   {
+    "d": "2026-05-30",
+    "heim": "SV Krefeld 1972",
+    "gast": "SSV Esslingen",
+    "h": true,
+    "zeit": "17:00",
+    "th": 18,
+    "tg": 12,
+    "ort": "krefeld",
+    "hinweis": "FINALE, Spiel 2 — DEUTSCHER ZWEITLIGA-MEISTER 2026!"
+   }
+  ],
+  "h2": [
+   {
+    "d": "2025-11-17",
+    "heim": "SV Krefeld 1972 II",
+    "gast": "SV Blau-Weiß Bochum",
+    "h": true,
+    "th": 0,
+    "tg": 10,
+    "ort": "krefeld",
+    "hinweis": "Kampflose Wertung (0:10)."
+   },
+   {
+    "d": "2025-11-17",
+    "heim": "SGW SC Solingen/Wfr. Wuppertal",
+    "gast": "SV Krefeld 1972 II",
+    "h": false,
+    "th": 10,
+    "tg": 0,
+    "ort": "solingen",
+    "hinweis": "Kampflose Wertung (10:0)."
+   },
+   {
+    "d": "2025-11-22",
+    "heim": "SV Krefeld 1972 II",
+    "gast": "SGW Rhenania/BW Poseidon Köln",
+    "h": true,
+    "zeit": "16:30",
+    "th": 14,
+    "tg": 13,
+    "ort": "krefeld"
+   },
+   {
+    "d": "2026-01-18",
+    "heim": "SV Krefeld 1972 II",
+    "gast": "SC Aqua Köln",
+    "h": true,
+    "zeit": "18:00",
+    "th": 13,
+    "tg": 12,
+    "ort": "krefeld"
+   },
+   {
+    "d": "2026-02-26",
+    "heim": "SC Aqua Köln",
+    "gast": "SV Krefeld 1972 II",
+    "h": false,
+    "zeit": "20:30",
+    "th": 10,
+    "tg": 11,
+    "ort": "koeln"
+   },
+   {
+    "d": "2026-04-19",
+    "heim": "SGW Rhenania/BW Poseidon Köln",
+    "gast": "SV Krefeld 1972 II",
+    "h": false,
+    "zeit": "11:30",
+    "th": 11,
+    "tg": 8,
+    "ort": "koeln"
+   },
+   {
+    "d": "2026-05-02",
+    "heim": "SV Blau-Weiß Bochum",
+    "gast": "SV Krefeld 1972 II",
+    "h": false,
+    "zeit": "18:00",
+    "th": 13,
+    "tg": 14,
+    "ort": "bochum"
+   },
+   {
+    "d": "2026-05-27",
+    "heim": "SV Krefeld 1972 II",
+    "gast": "Duisburger SV 1898 II",
+    "h": true,
+    "zeit": "20:00",
+    "th": 10,
+    "tg": 17,
+    "ort": "duisburg"
+   },
+   {
+    "d": "2026-06-17",
+    "heim": "SV Krefeld 1972 II",
+    "gast": "SGW SC Solingen/Wfr. Wuppertal",
+    "h": true,
+    "zeit": "20:00",
+    "th": 16,
+    "tg": 13,
+    "ort": "krefeld"
+   },
+   {
+    "d": "2026-06-23",
+    "heim": "ASC Duisburg II",
+    "gast": "SV Krefeld 1972 II",
+    "h": false,
+    "zeit": "20:00",
+    "th": 28,
+    "tg": 10,
+    "ort": "duisburg"
+   },
+   {
+    "d": "2026-06-28",
+    "heim": "Duisburger SV 1898 II",
+    "gast": "SV Krefeld 1972 II",
+    "h": false,
+    "zeit": "16:00",
+    "th": 17,
+    "tg": 16,
+    "ort": "duisburg"
+   },
+   {
+    "d": "2026-07-01",
+    "heim": "SV Krefeld 1972 II",
+    "gast": "ASC Duisburg II",
+    "h": true,
+    "zeit": "20:00",
+    "th": 16,
+    "tg": 15,
+    "ort": "krefeld"
+   }
+  ],
+  "h3": [
+   {
+    "d": "2026-03-07",
+    "heim": "SV Rheinhausen 1913",
+    "gast": "SV Krefeld 1972 III",
+    "h": false,
+    "zeit": "17:30",
+    "th": 17,
+    "tg": 11,
+    "ort": "duisburg",
+    "hinweis": "Einziges ausgetragenes Spiel der Saison — alle übrigen Partien der 3. Herren wurden kampflos gewertet."
    }
   ]
  },
@@ -526,6 +1168,488 @@
     "92:294",
     0
    ]
+  ],
+  "u16": [
+   [
+    1,
+    "Düsseldorfer SC 1898",
+    6,
+    5,
+    0,
+    1,
+    "80:65",
+    15
+   ],
+   [
+    2,
+    "ASC Duisburg",
+    6,
+    5,
+    0,
+    1,
+    "103:42",
+    15
+   ],
+   [
+    3,
+    "SV Blau-Weiß Bochum",
+    6,
+    5,
+    0,
+    1,
+    "148:75",
+    15
+   ],
+   [
+    4,
+    "Duisburger SV 1898",
+    6,
+    3,
+    0,
+    3,
+    "71:71",
+    9
+   ],
+   [
+    5,
+    "SV Krefeld 1972",
+    6,
+    2,
+    0,
+    4,
+    "44:64",
+    6,
+    true
+   ],
+   [
+    6,
+    "Rote Erde/SWIM-TEAM TuS 1859 Hamm",
+    6,
+    2,
+    0,
+    4,
+    "68:70",
+    6
+   ],
+   [
+    7,
+    "SGW Rhenania/BW Poseidon Köln",
+    6,
+    2,
+    0,
+    4,
+    "55:108",
+    6
+   ],
+   [
+    8,
+    "Aachener SV 06",
+    6,
+    0,
+    0,
+    6,
+    "70:144",
+    0
+   ]
+  ],
+  "u18": [
+   [
+    1,
+    "Duisburger SV 1898",
+    4,
+    4,
+    0,
+    0,
+    "91:36",
+    12
+   ],
+   [
+    2,
+    "Uerdinger Schwimmverein 08",
+    4,
+    2,
+    0,
+    2,
+    "51:68",
+    6,
+    true
+   ],
+   [
+    3,
+    "SC Aqua Köln",
+    4,
+    0,
+    0,
+    4,
+    "44:82",
+    0
+   ]
+  ],
+  "u12": [
+   [
+    1,
+    "ASC Duisburg",
+    8,
+    7,
+    0,
+    1,
+    "88:59",
+    21
+   ],
+   [
+    2,
+    "Duisburger SV 1898",
+    8,
+    6,
+    0,
+    2,
+    "98:42",
+    17
+   ],
+   [
+    3,
+    "SV Blau-Weiß Bochum",
+    8,
+    5,
+    0,
+    3,
+    "134:61",
+    16
+   ],
+   [
+    4,
+    "Uerdinger Schwimmverein 08",
+    8,
+    2,
+    0,
+    6,
+    "43:117",
+    6,
+    true
+   ],
+   [
+    5,
+    "SGW Rhenania/BW Poseidon Köln",
+    8,
+    0,
+    0,
+    8,
+    "34:118",
+    0
+   ]
+  ],
+  "u12-2": [
+   [
+    1,
+    "Aachener SV 06",
+    8,
+    7,
+    0,
+    1,
+    "131:43",
+    21
+   ],
+   [
+    2,
+    "Rote Erde/SWIM-TEAM TuS 1859 Hamm",
+    8,
+    7,
+    0,
+    1,
+    "114:33",
+    21
+   ],
+   [
+    3,
+    "Uerdinger Schwimmverein 08 II",
+    8,
+    3,
+    0,
+    5,
+    "37:76",
+    9,
+    true
+   ],
+   [
+    4,
+    "Düsseldorfer SC 1898",
+    8,
+    2,
+    0,
+    6,
+    "68:83",
+    7
+   ],
+   [
+    5,
+    "SC Aqua Köln",
+    8,
+    1,
+    0,
+    7,
+    "47:162",
+    2
+   ]
+  ],
+  "u10": [],
+  "h1": [
+   [
+    1,
+    "Düsseldorfer SC 1898",
+    14,
+    11,
+    0,
+    3,
+    "199:165",
+    34
+   ],
+   [
+    2,
+    "SV Krefeld 1972",
+    14,
+    11,
+    0,
+    3,
+    "231:164",
+    33,
+    true
+   ],
+   [
+    3,
+    "SC Neustadt/Weinstraße",
+    14,
+    10,
+    0,
+    4,
+    "206:186",
+    28
+   ],
+   [
+    4,
+    "Uerdinger Schwimmverein 08",
+    14,
+    9,
+    0,
+    5,
+    "201:184",
+    26
+   ],
+   [
+    5,
+    "SSV Esslingen",
+    14,
+    7,
+    0,
+    7,
+    "217:220",
+    22
+   ],
+   [
+    6,
+    "SVV Plauen",
+    14,
+    5,
+    0,
+    9,
+    "212:214",
+    16
+   ],
+   [
+    7,
+    "SV Würzburg 05",
+    14,
+    3,
+    0,
+    11,
+    "177:227",
+    9
+   ],
+   [
+    8,
+    "SpVg Laatzen 1894",
+    14,
+    0,
+    0,
+    14,
+    "161:244",
+    0
+   ]
+  ],
+  "h2": [
+   [
+    1,
+    "Duisburger SV 1898 II",
+    12,
+    11,
+    0,
+    1,
+    "190:107",
+    33
+   ],
+   [
+    2,
+    "SV Blau-Weiß Bochum",
+    12,
+    7,
+    0,
+    5,
+    "156:160",
+    20
+   ],
+   [
+    3,
+    "SGW Rhenania/BW Poseidon Köln",
+    12,
+    6,
+    0,
+    6,
+    "125:130",
+    19
+   ],
+   [
+    4,
+    "SV Krefeld 1972 II",
+    12,
+    6,
+    0,
+    6,
+    "128:169",
+    18,
+    true
+   ],
+   [
+    5,
+    "ASC Duisburg II",
+    12,
+    5,
+    0,
+    7,
+    "166:159",
+    16
+   ],
+   [
+    6,
+    "SGW SC Solingen/Wfr. Wuppertal",
+    12,
+    5,
+    0,
+    7,
+    "120:147",
+    13
+   ],
+   [
+    7,
+    "SC Aqua Köln",
+    12,
+    2,
+    0,
+    10,
+    "132:145",
+    7
+   ]
+  ],
+  "h3": [
+   [
+    1,
+    "Rote Erde/SWIM-TEAM TuS 1859 Hamm",
+    18,
+    14,
+    0,
+    4,
+    "268:187",
+    44
+   ],
+   [
+    2,
+    "ASC Duisburg III",
+    18,
+    12,
+    0,
+    6,
+    "246:201",
+    36
+   ],
+   [
+    3,
+    "Düsseldorfer SC 1898 II",
+    18,
+    12,
+    0,
+    6,
+    "245:212",
+    36
+   ],
+   [
+    4,
+    "Stolberger SV 1910",
+    18,
+    12,
+    0,
+    6,
+    "242:197",
+    35
+   ],
+   [
+    5,
+    "Uerdinger Schwimmverein 08",
+    18,
+    11,
+    0,
+    7,
+    "276:239",
+    34
+   ],
+   [
+    6,
+    "Aachener SV 06",
+    18,
+    9,
+    0,
+    9,
+    "214:225",
+    26
+   ],
+   [
+    7,
+    "SG Wassersport Iserlohn",
+    18,
+    8,
+    0,
+    10,
+    "214:195",
+    24
+   ],
+   [
+    8,
+    "SGW Rhenania/BW Poseidon Köln II",
+    18,
+    8,
+    0,
+    10,
+    "209:206",
+    23
+   ],
+   [
+    9,
+    "SV Rheinhausen 1913",
+    18,
+    4,
+    0,
+    14,
+    "202:278",
+    12
+   ],
+   [
+    10,
+    "SV Krefeld 1972 III",
+    18,
+    0,
+    0,
+    18,
+    "11:187",
+    0,
+    true
+   ]
   ]
  },
  "trainings": {},
@@ -580,7 +1704,37 @@
    "name": "Bad Stuttgart-Bad Cannstatt",
    "ort": "Stuttgart-Bad Cannstatt",
    "maps": "Inselbad Untertürkheim Stuttgart"
+  },
+  "esslingen": {
+   "name": "Bad des SSV Esslingen",
+   "ort": "Esslingen/Stuttgart",
+   "maps": "Inselbad Esslingen"
+  },
+  "laatzen": {
+   "name": "Schwimmbad Laatzen",
+   "ort": "Laatzen bei Hannover",
+   "maps": "aquaLaatzium Laatzen"
+  },
+  "neustadt": {
+   "name": "Stadionbad Neustadt",
+   "ort": "Neustadt an der Weinstraße",
+   "maps": "Stadionbad Neustadt Weinstraße"
+  },
+  "wuerzburg": {
+   "name": "Schwimmbad Würzburg",
+   "ort": "Würzburg",
+   "maps": "Wolfgang-Adami-Bad Würzburg"
+  },
+  "plauen": {
+   "name": "Stadtbad Plauen",
+   "ort": "Plauen",
+   "maps": "Stadtbad Plauen"
+  },
+  "solingen": {
+   "name": "Schwimmbad Solingen",
+   "ort": "Solingen",
+   "maps": "Klingenhalle Solingen Schwimmbad"
   }
  },
- "stand": "19.07.2026 20:50"
+ "stand": "19.07.2026"
 }
