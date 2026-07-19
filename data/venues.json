@@ -2,6 +2,7 @@
   "_hinweis": "Spielorte (Bäder) mit Adressen. 'erkennung' = Textbausteine, an denen der Daten-Lauf den Spielort aus der Ort-Spalte des DSV-Ergebnisdienstes erkennt (dort stehen meist nur Städtenamen). Reihenfolge zählt: speziellere Muster (Uerdingen, Rheinhausen) vor allgemeinen. Direkt auf GitHub bearbeitbar — Adressen der Bäder gern präzisieren.",
   "uerdingen":  { "name": "Bad in Krefeld-Uerdingen", "ort": "Krefeld-Uerdingen", "maps": "Schwimmbad Krefeld-Uerdingen", "erkennung": ["Uerdingen"] },
   "krefeld":    { "name": "Heimbad SVK", "adresse": "Palmstraße 8 (Freibad-Anlage)", "ort": "47803 Krefeld", "maps": "Palmstraße 8, 47803 Krefeld", "erkennung": ["Krefeld"] },
+  "ascd":       { "name": "ASCD Vereinsbad", "adresse": "Kruppstraße 32a", "ort": "47055 Duisburg", "maps": "Kruppstraße 32a, 47055 Duisburg", "erkennung": ["ASCD", "Kruppstraße"] },
   "duisburg":   { "name": "Schwimmbad Duisburg", "ort": "Duisburg", "maps": "Schwimmstadion Duisburg", "erkennung": ["Rheinhausen", "Duisburg"] },
   "duesseldorf":{ "name": "Schwimmbad Düsseldorf", "ort": "Düsseldorf", "maps": "Rheinbad Düsseldorf", "erkennung": ["Düsseldorf"] },
   "koeln":      { "name": "Schwimmbad Köln", "ort": "Köln", "maps": "Schwimmbad Köln Wasserball", "erkennung": ["Köln", "Bonn"] },
