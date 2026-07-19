@@ -762,8 +762,8 @@
     "gast": "Teilnehmer werden zugelost",
     "h": false,
     "zeit": "11:00",
-    "ort": "duisburg",
-    "hinweis": "Die U10-Endrunde NRW steigt am 5. September 2026 in Duisburg — Gruppen und Anwurfzeiten lost der Verband noch zu."
+    "ort": "ascd",
+    "hinweis": "Die U10-Endrunde NRW steigt am 5. September 2026 im ASCD Vereinsbad in Duisburg (Ausrichter: ASC Duisburg) — Gruppen und Anwurfzeiten lost der Verband noch zu."
    }
   ],
   "h1": [
@@ -1789,6 +1789,12 @@
    "name": "Schwimmbad Duisburg",
    "ort": "Duisburg",
    "maps": "Schwimmstadion Duisburg"
+  },
+  "ascd": {
+   "name": "ASCD Vereinsbad",
+   "adresse": "Kruppstraße 32a",
+   "ort": "47055 Duisburg",
+   "maps": "Kruppstraße 32a, 47055 Duisburg"
   },
   "duesseldorf": {
    "name": "Schwimmbad Düsseldorf",
