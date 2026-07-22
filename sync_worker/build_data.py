@@ -135,6 +135,7 @@ def main() -> None:
     teams_datei = lade_json(ROOT / "data" / "teams.json", {"teams": []})
     teams_cfg = teams_datei["teams"]
     trainings = {k: v for k, v in lade_json(ROOT / "data" / "trainings.json", {}).items() if not k.startswith("_")}
+    verein = {k: v for k, v in lade_json(ROOT / "data" / "verein.json", {}).items() if not k.startswith("_")}
     venues_cfg = lade_json(ROOT / "data" / "venues.json", {})
     venues = {k: {kk: vv for kk, vv in v.items() if kk != "erkennung"}
               for k, v in venues_cfg.items() if not k.startswith("_")}
@@ -192,6 +193,7 @@ def main() -> None:
         "standings": out_standings,
         "trainings": trainings,
         "venues": venues,
+        "verein": verein,
         "stand": datetime.now(berlin).strftime("%d.%m.%Y %H:%M"),
     }
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
