@@ -2626,7 +2626,13 @@ const DATA = {
    ],
    "adresse": "Palmstraße 8 · 47803 Krefeld",
    "kontakt": "SVK-Geschäftsstelle",
-   "telefon": "+49 2151 592393"
+   "telefon": "+49 2151 592393",
+   "links": [
+    {
+     "text": "🗓️ Beckenbelegung",
+     "url": "https://www.svk72.de/index.php/bad/2016-08-08-16-00-39"
+    }
+   ]
   },
   "gastro": {
    "titel": "Gaststätte „Zur Kull\" · Restaurant Buonissimo",
@@ -2650,7 +2656,13 @@ const DATA = {
    ],
    "info": "An den Ruhetagen können private Veranstaltungen gebucht werden.",
    "kontakt": "Devran Dogan",
-   "telefon": "+49 1590 6485464"
+   "telefon": "+49 1590 6485464",
+   "links": [
+    {
+     "text": "🍽️ Speisekarte",
+     "url": "https://www.svk72.de/index.php/gastronomie/speisekarte"
+    }
+   ]
   },
   "stand": "20.07.2026"
  },
@@ -2873,10 +2885,10 @@ function infoView() {
         <div class="btnrow"><a class="btn p" target="_blank" rel="noopener" href="${v.belegung.url}">🌡️ ${esc(v.belegung.linktext)}</a></div></div>` : ""}
       ${v.bad ? `<div class="card"><div class="label">${esc(v.bad.titel)}</div><div style="margin-top:6px">${v.bad.zeiten.map(zeile).join("")}</div>
         ${v.bad.adresse ? `<div class="a" style="font-size:12.5px;color:var(--muted);margin-top:8px">📍 ${esc(v.bad.adresse)}${v.bad.telefon ? ` · ☎ ${esc(v.bad.telefon)}` : ""}</div>` : ""}
-        ${v.bad.telefon ? `<div class="btnrow"><a class="btn s" href="tel:${v.bad.telefon.replace(/\s/g, "")}">📞 ${esc(v.bad.kontakt || "Bad")} anrufen</a></div>` : ""}</div>` : ""}
+        ${(v.bad.telefon || (v.bad.links || []).length) ? `<div class="btnrow">${v.bad.telefon ? `<a class="btn s" href="tel:${v.bad.telefon.replace(/\s/g, "")}">📞 ${esc(v.bad.kontakt || "Bad")} anrufen</a>` : ""}${(v.bad.links || []).map(l => `<a class="btn s" target="_blank" rel="noopener" href="${l.url}">${esc(l.text)}</a>`).join("")}</div>` : ""}</div>` : ""}
       ${v.gastro ? `<div class="card"><div class="label">${esc(v.gastro.titel)}</div><div style="margin-top:6px">${v.gastro.zeiten.map(zeile).join("")}</div>
         ${v.gastro.info ? `<div class="a" style="font-size:12.5px;color:var(--muted);margin-top:8px">${esc(v.gastro.info)}</div>` : ""}
-        ${v.gastro.telefon ? `<div class="btnrow"><a class="btn s" href="tel:${v.gastro.telefon.replace(/\s/g, "")}">📞 ${esc(v.gastro.kontakt || "Gaststätte")} anrufen</a></div>` : ""}</div>` : ""}
+        ${(v.gastro.telefon || (v.gastro.links || []).length) ? `<div class="btnrow">${v.gastro.telefon ? `<a class="btn s" href="tel:${v.gastro.telefon.replace(/\s/g, "")}">📞 ${esc(v.gastro.kontakt || "Gaststätte")} anrufen</a>` : ""}${(v.gastro.links || []).map(l => `<a class="btn s" target="_blank" rel="noopener" href="${l.url}">${esc(l.text)}</a>`).join("")}</div>` : ""}</div>` : ""}
       <div class="card"><div class="label">Heimspiele diese Woche</div>${heimHtml}</div>
       <div class="hint">Angaben laut svk72.de · Stand ${esc(v.stand || DATA.stand)} · Änderungen vorbehalten</div>
     </div>`);

@@ -2525,7 +2525,13 @@
    ],
    "adresse": "Palmstraße 8 · 47803 Krefeld",
    "kontakt": "SVK-Geschäftsstelle",
-   "telefon": "+49 2151 592393"
+   "telefon": "+49 2151 592393",
+   "links": [
+    {
+     "text": "🗓️ Beckenbelegung",
+     "url": "https://www.svk72.de/index.php/bad/2016-08-08-16-00-39"
+    }
+   ]
   },
   "gastro": {
    "titel": "Gaststätte „Zur Kull\" · Restaurant Buonissimo",
@@ -2549,7 +2555,13 @@
    ],
    "info": "An den Ruhetagen können private Veranstaltungen gebucht werden.",
    "kontakt": "Devran Dogan",
-   "telefon": "+49 1590 6485464"
+   "telefon": "+49 1590 6485464",
+   "links": [
+    {
+     "text": "🍽️ Speisekarte",
+     "url": "https://www.svk72.de/index.php/gastronomie/speisekarte"
+    }
+   ]
   },
   "stand": "20.07.2026"
  },
