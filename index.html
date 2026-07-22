@@ -2443,28 +2443,14 @@ const DATA = {
    {
     "tag": "Dienstag, 18. & 25.08.",
     "von": "10:00",
-    "bis": "11:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining"
-   },
-   {
-    "tag": "Dienstag, 18. & 25.08.",
-    "von": "17:00",
-    "bis": "18:30",
+    "bis": "11:30 & 17:00 – 18:30",
     "ort": "SVK-Bad, Palmstraße 8",
     "info": "Intensivtraining"
    },
    {
     "tag": "Mittwoch, 19. & 26.08.",
     "von": "10:00",
-    "bis": "11:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining"
-   },
-   {
-    "tag": "Mittwoch, 19. & 26.08.",
-    "von": "17:00",
-    "bis": "18:30",
+    "bis": "11:30 & 17:00 – 18:30",
     "ort": "SVK-Bad, Palmstraße 8",
     "info": "Intensivtraining"
    },
@@ -2637,7 +2623,10 @@ const DATA = {
      "tage": "Samstag, Sonn- & Feiertage",
      "zeit": "08:00 – 19:45 Uhr"
     }
-   ]
+   ],
+   "adresse": "Palmstraße 8 · 47803 Krefeld",
+   "kontakt": "SVK-Geschäftsstelle",
+   "telefon": "+49 2151 592393"
   },
   "gastro": {
    "titel": "Gaststätte „Zur Kull\" · Restaurant Buonissimo",
@@ -2882,7 +2871,9 @@ function infoView() {
       ${v.belegung ? `<div class="card"><div class="label">Aktuelle Badbelegung</div>
         <div class="a">${esc(v.belegung.text)}</div>
         <div class="btnrow"><a class="btn p" target="_blank" rel="noopener" href="${v.belegung.url}">🌡️ ${esc(v.belegung.linktext)}</a></div></div>` : ""}
-      ${v.bad ? `<div class="card"><div class="label">${esc(v.bad.titel)}</div><div style="margin-top:6px">${v.bad.zeiten.map(zeile).join("")}</div></div>` : ""}
+      ${v.bad ? `<div class="card"><div class="label">${esc(v.bad.titel)}</div><div style="margin-top:6px">${v.bad.zeiten.map(zeile).join("")}</div>
+        ${v.bad.adresse ? `<div class="a" style="font-size:12.5px;color:var(--muted);margin-top:8px">📍 ${esc(v.bad.adresse)}${v.bad.telefon ? ` · ☎ ${esc(v.bad.telefon)}` : ""}</div>` : ""}
+        ${v.bad.telefon ? `<div class="btnrow"><a class="btn s" href="tel:${v.bad.telefon.replace(/\s/g, "")}">📞 ${esc(v.bad.kontakt || "Bad")} anrufen</a></div>` : ""}</div>` : ""}
       ${v.gastro ? `<div class="card"><div class="label">${esc(v.gastro.titel)}</div><div style="margin-top:6px">${v.gastro.zeiten.map(zeile).join("")}</div>
         ${v.gastro.info ? `<div class="a" style="font-size:12.5px;color:var(--muted);margin-top:8px">${esc(v.gastro.info)}</div>` : ""}
         ${v.gastro.telefon ? `<div class="btnrow"><a class="btn s" href="tel:${v.gastro.telefon.replace(/\s/g, "")}">📞 ${esc(v.gastro.kontakt || "Gaststätte")} anrufen</a></div>` : ""}</div>` : ""}
