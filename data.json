@@ -2326,7 +2326,84 @@
    ]
   ]
  },
- "trainings": {},
+ "trainings": {
+  "u10": [
+   {
+    "tag": "Bis 16. August",
+    "info": "Trainingsfrei — Sommerferien"
+   },
+   {
+    "tag": "Montag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Dienstag",
+    "von": "10:00",
+    "bis": "11:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Dienstag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Mittwoch",
+    "von": "10:00",
+    "bis": "11:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Mittwoch",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Freitag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Sonntag",
+    "von": "11:30",
+    "bis": "13:00",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Dienstag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "ab 01.09."
+   },
+   {
+    "tag": "Freitag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "ab 01.09."
+   },
+   {
+    "tag": "Sonntag",
+    "von": "11:30",
+    "bis": "13:00",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "ab 01.09."
+   }
+  ]
+ },
  "venues": {
   "uerdingen": {
    "name": "Bad in Krefeld-Uerdingen",

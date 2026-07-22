@@ -2425,7 +2425,84 @@ const DATA = {
    ]
   ]
  },
- "trainings": {},
+ "trainings": {
+  "u10": [
+   {
+    "tag": "Bis 16. August",
+    "info": "Trainingsfrei — Sommerferien"
+   },
+   {
+    "tag": "Montag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Dienstag",
+    "von": "10:00",
+    "bis": "11:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Dienstag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Mittwoch",
+    "von": "10:00",
+    "bis": "11:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Mittwoch",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Freitag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Sonntag",
+    "von": "11:30",
+    "bis": "13:00",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining 17.–29.08."
+   },
+   {
+    "tag": "Dienstag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "ab 01.09."
+   },
+   {
+    "tag": "Freitag",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "ab 01.09."
+   },
+   {
+    "tag": "Sonntag",
+    "von": "11:30",
+    "bis": "13:00",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "ab 01.09."
+   }
+  ]
+ },
  "venues": {
   "uerdingen": {
    "name": "Bad in Krefeld-Uerdingen",
@@ -2673,9 +2750,12 @@ function teamView(teamId, tab) {
                      : `<div class="empty">Keine anstehenden Spiele — die neue Saison startet im Herbst.</div>`;
   } else {
     const tr = DATA.trainings[teamId] || [];
-    body = (tr.length ? tr.map(x => `<div class="card train"><div class="day">${esc(x.tag)}</div>
+    body = (tr.length ? tr.map(x => x.von
+      ? `<div class="card train"><div class="day">${esc(x.tag)}</div>
         <div class="tinfo">${esc(x.von)} – ${esc(x.bis)} Uhr</div>
-        <div class="tplace">${esc(x.ort)}${x.info ? " · " + esc(x.info) : ""}</div></div>`).join("")
+        <div class="tplace">${esc(x.ort)}${x.info ? " · " + esc(x.info) : ""}</div></div>`
+      : `<div class="card train"><div class="day">${esc(x.tag)}</div>
+        <div class="tplace">${esc(x.info || "")}</div></div>`).join("")
       : `<div class="empty">Noch keine Trainingszeiten hinterlegt.</div>`);
   }
 
