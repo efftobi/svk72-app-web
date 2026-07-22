@@ -1,0 +1,30 @@
+{
+  "_hinweis": "Vereins-Infos für den i-Button oben rechts — direkt auf GitHub editierbar (Stift-Symbol). Quelle: svk72.de, Stand 20.07.2026. Der nächste Daten-Lauf übernimmt Änderungen automatisch in die App.",
+  "adresse": "Palmstraße 8 · 47803 Krefeld",
+  "belegung": {
+    "text": "Das Sommerbad zählt seine Gäste live — bis zu 600 Besucher gleichzeitig. Die aktuelle Zahl steht auf der Startseite von svk72.de.",
+    "url": "https://www.svk72.de/",
+    "linktext": "Live-Belegung auf svk72.de"
+  },
+  "bad": {
+    "titel": "Sommerbad · Öffnungszeiten",
+    "zeiten": [
+      { "tage": "Montag", "zeit": "06:00 – 08:45 & 13:00 – 21:45 Uhr" },
+      { "tage": "Dienstag – Freitag", "zeit": "06:00 – 21:45 Uhr" },
+      { "tage": "Samstag, Sonn- & Feiertage", "zeit": "08:00 – 19:45 Uhr" }
+    ]
+  },
+  "gastro": {
+    "titel": "Gaststätte „Zur Kull\" · Restaurant Buonissimo",
+    "zeiten": [
+      { "tage": "Sommer · Montag", "zeit": "13:00 – 22:00 Uhr" },
+      { "tage": "Sommer · Di – Sa, Sonn- & Feiertage", "zeit": "11:00 – 22:00 Uhr" },
+      { "tage": "Warme Küche", "zeit": "12:00 – 21:30 Uhr" },
+      { "tage": "Winter · Mittwoch – Sonntag", "zeit": "16:00 – 22:00 Uhr" }
+    ],
+    "info": "An den Ruhetagen können private Veranstaltungen gebucht werden.",
+    "kontakt": "Devran Dogan",
+    "telefon": "+49 1590 6485464"
+  },
+  "stand": "20.07.2026"
+}
