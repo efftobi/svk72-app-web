@@ -79,6 +79,11 @@
   .hint{font-size:11px;color:var(--muted);text-align:center;margin:10px 0 4px}
   .empty{text-align:center;color:var(--muted);font-size:13.5px;padding:30px 20px;line-height:1.6}
   .banner{background:#fffbe8;border:1px solid #e8d78a;border-radius:12px;padding:10px 12px;font-size:12.5px;color:#57430a;margin-bottom:10px;line-height:1.45}
+  .ibtn{width:34px;height:34px;border-radius:50%;border:2px solid rgba(255,255,255,.85);background:none;color:#fff;font-size:17px;font-weight:700;font-style:italic;font-family:Georgia,serif;cursor:pointer;flex-shrink:0}
+  .zrow{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid #f0f2f4;font-size:13.5px}
+  .zrow:last-of-type{border-bottom:none}
+  .zrow .zt{color:var(--muted)}
+  .zrow .zz{font-weight:600;text-align:right}
 </style>
 </head>
 <body>
@@ -2530,6 +2535,56 @@ const DATA = {
    "maps": "Inselbad Untertürkheim Stuttgart"
   }
  },
+ "verein": {
+  "adresse": "Palmstraße 8 · 47803 Krefeld",
+  "belegung": {
+   "text": "Das Sommerbad zählt seine Gäste live — bis zu 600 Besucher gleichzeitig. Die aktuelle Zahl steht auf der Startseite von svk72.de.",
+   "url": "https://www.svk72.de/",
+   "linktext": "Live-Belegung auf svk72.de"
+  },
+  "bad": {
+   "titel": "Sommerbad · Öffnungszeiten",
+   "zeiten": [
+    {
+     "tage": "Montag",
+     "zeit": "06:00 – 08:45 & 13:00 – 21:45 Uhr"
+    },
+    {
+     "tage": "Dienstag – Freitag",
+     "zeit": "06:00 – 21:45 Uhr"
+    },
+    {
+     "tage": "Samstag, Sonn- & Feiertage",
+     "zeit": "08:00 – 19:45 Uhr"
+    }
+   ]
+  },
+  "gastro": {
+   "titel": "Gaststätte „Zur Kull\" · Restaurant Buonissimo",
+   "zeiten": [
+    {
+     "tage": "Sommer · Montag",
+     "zeit": "13:00 – 22:00 Uhr"
+    },
+    {
+     "tage": "Sommer · Di – Sa, Sonn- & Feiertage",
+     "zeit": "11:00 – 22:00 Uhr"
+    },
+    {
+     "tage": "Warme Küche",
+     "zeit": "12:00 – 21:30 Uhr"
+    },
+    {
+     "tage": "Winter · Mittwoch – Sonntag",
+     "zeit": "16:00 – 22:00 Uhr"
+    }
+   ],
+   "info": "An den Ruhetagen können private Veranstaltungen gebucht werden.",
+   "kontakt": "Devran Dogan",
+   "telefon": "+49 1590 6485464"
+  },
+  "stand": "20.07.2026"
+ },
  "stand": "19.07.2026"
 };
 
@@ -2572,7 +2627,7 @@ function homeView() {
   const favTeams = DATA.teams.filter(t => favs.includes(t.id));
   const rest = DATA.teams.filter(t => !favs.includes(t.id));
   render(`
-    <header><div class="brand"><img src="logo-header.png" alt=""><div><h1>SVK 72 Wasserball</h1><div class="sub">Schwimm-Vereinigung Krefeld 1972 e. V.</div></div></div></header>
+    <header><div class="brand"><img src="logo-header.png" alt=""><div style="flex:1;min-width:0"><h1>SVK 72 Wasserball</h1><div class="sub">Schwimm-Vereinigung Krefeld 1972 e. V.</div></div><button class="ibtn" onclick="infoView()" aria-label="Vereins-Infos">i</button></div></header>
     <div class="content">
       ${favTeams.length ? `<div class="section-label">★ Meine Teams</div>` + favTeams.map(t => teamCard(t, true)).join("") : ""}
       <div class="section-label">Jugend</div>
@@ -2699,7 +2754,62 @@ function icsUrl(m, v) {
   return "data:text/calendar;charset=utf-8," + encodeURIComponent(ics);
 }
 
+/* ================= Vereins-Infos (i-Button) ================= */
+function heimspieleWoche() {
+  const start = new Date(); start.setHours(0, 0, 0, 0);
+  start.setDate(start.getDate() - ((start.getDay() + 6) % 7));   // Montag dieser Woche
+  const end = new Date(start); end.setDate(end.getDate() + 7);
+  const out = [];
+  for (const t of DATA.teams) (DATA.matches[t.id] || []).forEach((m, i) => {
+    const d = new Date(m.d + "T12:00");
+    if (m.h && d >= start && d < end) out.push({ t, m, i });
+  });
+  out.sort((a, b) => dOf(a.m) - dOf(b.m));
+  return out;
+}
+
+function naechstesHeimspiel() {
+  const now = new Date();
+  let best = null;
+  for (const t of DATA.teams) (DATA.matches[t.id] || []).forEach((m, i) => {
+    if (m.h && !played(m) && dOf(m) >= now && (!best || dOf(m) < dOf(best.m))) best = { t, m, i };
+  });
+  return best;
+}
+
+function infoView() {
+  const v = DATA.verein || {};
+  const zeile = (z) => `<div class="zrow"><span class="zt">${esc(z.tage)}</span><span class="zz">${esc(z.zeit)}</span></div>`;
+  const heim = heimspieleWoche();
+  const nxt = naechstesHeimspiel();
+  const heimHtml = heim.length
+    ? heim.map(({ t, m, i }) => `<div class="card tappable" style="margin:8px 0 0;box-shadow:none;border:1px solid #eef1f4" onclick="detailView('${t.id}',${i})">
+        <div class="match">
+          <div class="date"><div class="d">${String(new Date(m.d + "T12:00").getDate()).padStart(2, "0")}</div><div class="m">${MON[new Date(m.d + "T12:00").getMonth()]}</div></div>
+          <div class="vs"><div class="opp">${esc(t.name)}: ${esc(short(m.heim))} – ${esc(short(m.gast))}</div>
+          <div class="where">${m.zeit ? m.zeit + " Uhr · " : ""}${esc((DATA.venues[m.ort] || {}).name || "Heimbad")}</div></div>
+          ${played(m) ? `<div class="score ${svkWon(m) ? "w" : svkLost(m) ? "l" : "d"}">${m.th} : ${m.tg}</div>` : `<div class="time">${m.zeit || ""}</div>`}
+        </div></div>`).join("")
+    : `<div class="a" style="color:var(--muted)">Diese Woche findet kein Heimspiel statt.${nxt ? `<br>Nächstes Heimspiel: <strong>${fmtShort(nxt.m)}</strong> (${esc(nxt.t.name)})` : " Die neue Saison startet im Herbst."}</div>`;
+
+  render(`
+    <header><button class="back" onclick="homeView()">‹ Teams</button>
+      <h1>Vereins-Infos</h1><div class="sub">SVK 72 · ${esc(v.adresse || "Palmstraße 8, Krefeld")}</div></header>
+    <div class="content">
+      ${v.belegung ? `<div class="card"><div class="label">Aktuelle Badbelegung</div>
+        <div class="a">${esc(v.belegung.text)}</div>
+        <div class="btnrow"><a class="btn p" target="_blank" rel="noopener" href="${v.belegung.url}">🌡️ ${esc(v.belegung.linktext)}</a></div></div>` : ""}
+      ${v.bad ? `<div class="card"><div class="label">${esc(v.bad.titel)}</div><div style="margin-top:6px">${v.bad.zeiten.map(zeile).join("")}</div></div>` : ""}
+      ${v.gastro ? `<div class="card"><div class="label">${esc(v.gastro.titel)}</div><div style="margin-top:6px">${v.gastro.zeiten.map(zeile).join("")}</div>
+        ${v.gastro.info ? `<div class="a" style="font-size:12.5px;color:var(--muted);margin-top:8px">${esc(v.gastro.info)}</div>` : ""}
+        ${v.gastro.telefon ? `<div class="btnrow"><a class="btn s" href="tel:${v.gastro.telefon.replace(/\s/g, "")}">📞 ${esc(v.gastro.kontakt || "Gaststätte")} anrufen</a></div>` : ""}</div>` : ""}
+      <div class="card"><div class="label">Heimspiele diese Woche</div>${heimHtml}</div>
+      <div class="hint">Angaben laut svk72.de · Stand ${esc(v.stand || DATA.stand)} · Änderungen vorbehalten</div>
+    </div>`);
+}
+
 /* ================= Aktionen ================= */
+window.infoView = infoView;
 window.openTeam = (id, tab) => teamView(id, tab);
 window.detailView = detailView;
 window.homeView = homeView;
