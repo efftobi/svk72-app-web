@@ -2333,74 +2333,75 @@
     "info": "Trainingsfrei — Sommerferien"
    },
    {
-    "tag": "Montag",
+    "tag": "Montag, 17. & 24.08.",
     "von": "17:00",
     "bis": "18:30",
     "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
+    "info": "Intensivtraining"
    },
    {
-    "tag": "Dienstag",
+    "tag": "Dienstag, 18. & 25.08.",
     "von": "10:00",
     "bis": "11:30",
     "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Dienstag, 18. & 25.08.",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Mittwoch, 19. & 26.08.",
+    "von": "10:00",
+    "bis": "11:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Mittwoch, 19. & 26.08.",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Freitag, 21. & 28.08.",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Sonntag, 23.08.",
+    "von": "11:30",
+    "bis": "13:00",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Ab 1. September",
+    "info": "Regelbetrieb"
    },
    {
     "tag": "Dienstag",
     "von": "17:00",
     "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
-   },
-   {
-    "tag": "Mittwoch",
-    "von": "10:00",
-    "bis": "11:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
-   },
-   {
-    "tag": "Mittwoch",
-    "von": "17:00",
-    "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
+    "ort": "SVK-Bad, Palmstraße 8"
    },
    {
     "tag": "Freitag",
     "von": "17:00",
     "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
+    "ort": "SVK-Bad, Palmstraße 8"
    },
    {
     "tag": "Sonntag",
     "von": "11:30",
     "bis": "13:00",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
-   },
-   {
-    "tag": "Dienstag",
-    "von": "17:00",
-    "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "ab 01.09."
-   },
-   {
-    "tag": "Freitag",
-    "von": "17:00",
-    "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "ab 01.09."
-   },
-   {
-    "tag": "Sonntag",
-    "von": "11:30",
-    "bis": "13:00",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "ab 01.09."
+    "ort": "SVK-Bad, Palmstraße 8"
    }
   ]
  },
