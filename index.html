@@ -45,7 +45,9 @@
   .fav-card{border-left:4px solid var(--accent)}
   .nextline{font-size:12.5px;color:var(--muted);margin-top:5px}
   .pill{display:inline-block;font-size:10.5px;font-weight:700;color:var(--primary-dark);background:#e6effa;border-radius:8px;padding:2px 8px;margin-top:6px}
-  .tabs{display:flex;background:var(--primary);position:sticky;top:calc(var(--sat) + 64px);z-index:4}
+  .tabs{display:flex;background:var(--primary)}
+  .stick{position:sticky;top:0;z-index:6}
+  .stick header{position:static}
   .tabs button{flex:1;padding:11px 4px;background:none;border:none;color:rgba(255,255,255,.65);font-size:12.5px;font-weight:600;cursor:pointer;border-bottom:3px solid transparent}
   .tabs button.on{color:#fff;border-bottom-color:var(--accent)}
   .match{display:flex;align-items:center;gap:10px}
@@ -2432,74 +2434,75 @@ const DATA = {
     "info": "Trainingsfrei — Sommerferien"
    },
    {
-    "tag": "Montag",
+    "tag": "Montag, 17. & 24.08.",
     "von": "17:00",
     "bis": "18:30",
     "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
+    "info": "Intensivtraining"
    },
    {
-    "tag": "Dienstag",
+    "tag": "Dienstag, 18. & 25.08.",
     "von": "10:00",
     "bis": "11:30",
     "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Dienstag, 18. & 25.08.",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Mittwoch, 19. & 26.08.",
+    "von": "10:00",
+    "bis": "11:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Mittwoch, 19. & 26.08.",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Freitag, 21. & 28.08.",
+    "von": "17:00",
+    "bis": "18:30",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Sonntag, 23.08.",
+    "von": "11:30",
+    "bis": "13:00",
+    "ort": "SVK-Bad, Palmstraße 8",
+    "info": "Intensivtraining"
+   },
+   {
+    "tag": "Ab 1. September",
+    "info": "Regelbetrieb"
    },
    {
     "tag": "Dienstag",
     "von": "17:00",
     "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
-   },
-   {
-    "tag": "Mittwoch",
-    "von": "10:00",
-    "bis": "11:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
-   },
-   {
-    "tag": "Mittwoch",
-    "von": "17:00",
-    "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
+    "ort": "SVK-Bad, Palmstraße 8"
    },
    {
     "tag": "Freitag",
     "von": "17:00",
     "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
+    "ort": "SVK-Bad, Palmstraße 8"
    },
    {
     "tag": "Sonntag",
     "von": "11:30",
     "bis": "13:00",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "Intensivtraining 17.–29.08."
-   },
-   {
-    "tag": "Dienstag",
-    "von": "17:00",
-    "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "ab 01.09."
-   },
-   {
-    "tag": "Freitag",
-    "von": "17:00",
-    "bis": "18:30",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "ab 01.09."
-   },
-   {
-    "tag": "Sonntag",
-    "von": "11:30",
-    "bis": "13:00",
-    "ort": "SVK-Bad, Palmstraße 8",
-    "info": "ab 01.09."
+    "ort": "SVK-Bad, Palmstraße 8"
    }
   ]
  },
@@ -2760,9 +2763,9 @@ function teamView(teamId, tab) {
   }
 
   render(`
-    <header><button class="back" onclick="homeView()">‹ Teams</button>
+    <div class="stick"><header><button class="back" onclick="homeView()">‹ Teams</button>
       <h1>${esc(t.name)}</h1><div class="sub">${esc(t.liga)}</div></header>
-    <div class="tabs">${tabBtn("spiele","Spiele")}${tabBtn("tabelle","Tabelle")}${tabBtn("next","Nächste")}${tabBtn("training","Training")}</div>
+    <div class="tabs">${tabBtn("spiele","Spiele")}${tabBtn("tabelle","Tabelle")}${tabBtn("next","Nächste")}${tabBtn("training","Training")}</div></div>
     <div class="content">${body}</div>`);
 }
 
