@@ -24,7 +24,7 @@
     "titel": "Gaststätte „Zur Kull\" · Restaurant Buonissimo",
     "zeiten": [
       { "tage": "Sommer · Montag", "zeit": "13:00 – 22:00 Uhr" },
-      { "tage": "Sommer · Di – Sa, Sonn- & Feiertage", "zeit": "11:00 – 22:00 Uhr" },
+      { "tage": "Sommer · Dienstag – Sonntag", "zeit": "11:00 – 22:00 Uhr" },
       { "tage": "Warme Küche", "zeit": "12:00 – 21:30 Uhr" },
       { "tage": "Winter · Mittwoch – Sonntag", "zeit": "16:00 – 22:00 Uhr" }
     ],
@@ -32,7 +32,7 @@
     "kontakt": "Devran Dogan",
     "telefon": "+49 1590 6485464",
     "links": [
-      { "text": "🍽️ Speisekarte", "url": "https://www.svk72.de/index.php/gastronomie/speisekarte" }
+      { "text": "🍽️ Speisekarte", "url": "https://www.svk72.de/images/zur_kull/2026_Speisekarte_Kull.pdf" }
     ]
   },
   "stand": "20.07.2026"
